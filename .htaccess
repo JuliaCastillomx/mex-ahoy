@@ -1,0 +1,27 @@
+# ======================================================================
+# Mex-Ahoy! (mex-ahoy.com) — Configuración Apache / Hostinger
+# ======================================================================
+
+DirectoryIndex index.html index.php
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Forzar HTTPS en producción (mex-ahoy.com)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} !^localhost [NC]
+  RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Proteger respaldos y lista privada de suscriptores locales
+  RewriteRule ^data/backups/ - [F,L]
+  RewriteRule ^data/subscribers\.json$ - [F,L]
+</IfModule>
+
+# Evitar caché agresiva en el archivo dinámico de artículos
+<FilesMatch "articles\.json$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </IfModule>
+</FilesMatch>

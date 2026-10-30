@@ -1,0 +1,19 @@
+{
+  "name": "mex-ahoy",
+  "version": "1.0.0",
+  "description": "Mex-Ahoy! - Your Weekly Look Into Mexico (Digital Newspaper)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [
+    "newspaper",
+    "mexico",
+    "mex-ahoy",
+    "editorial",
+    "journalism"
+  ],
+  "author": "Ricardo Castillo",
+  "license": "ISC"
+}

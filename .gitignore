@@ -1,0 +1,9 @@
+# Dependencias y archivos del sistema
+node_modules/
+.DS_Store
+Thumbs.db
+.firebase/
+
+# Archivos generados en vivo en el servidor Hostinger (evita conflictos de Git)
+data/backups/
+data/subscribers.json

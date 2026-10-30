@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mex-Ahoy! | Your Weekly Look Into Mexico</title>
+  <meta name="description" content="Mex-Ahoy! A weekly digital newspaper providing clear, thoughtful and insightful stories about Mexico: politics, culture, expat life, travel, and food.">
+  <link rel="canonical" href="https://mex-ahoy.com/">
+
+  <!-- Open Graph / Social Sharing (mex-ahoy.com) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mex-ahoy.com/">
+  <meta property="og:site_name" content="Mex-Ahoy!">
+  <meta property="og:title" content="Mex-Ahoy! | Your Weekly Look Into Mexico">
+  <meta property="og:description" content="A weekly digital newspaper providing clear, thoughtful and insightful stories about the Mexico that matters: politics, culture, expat life, travel, and food.">
+  <meta property="og:image" content="https://mex-ahoy.com/assets/images/mex_ahoy_logo_horizontal.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mex-Ahoy! | Your Weekly Look Into Mexico">
+  <meta name="twitter:description" content="Clear, thoughtful and insightful stories about the Mexico that matters.">
+  <meta name="twitter:image" content="https://mex-ahoy.com/assets/images/mex_ahoy_logo_horizontal.png">
+  
+  <!-- Favicon using vertical logo emblem -->
+  <link rel="icon" type="image/jpeg" href="assets/images/mex_ahoy_logo_vertical.jpg">
+  
+  <!-- Google Fonts for Authentic Newspaper Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <div class="newspaper-wrapper">
+    
+    <!-- Real-time Financial & Weather Ticker -->
+    <header class="ticker-bar">
+      <div class="ticker-items">
+        <span class="ticker-item">
+          <span>USD/MXN:</span>
+          <span class="ticker-highlight" id="rate-usd">$18.42 MXN</span>
+        </span>
+        <span class="ticker-item">
+          <span>EUR/MXN:</span>
+          <span class="ticker-highlight" id="rate-eur">$20.15 MXN</span>
+        </span>
+        <span class="ticker-item">
+          <span>CDMX:</span>
+          <span class="ticker-highlight">22°C ☀️</span>
+        </span>
+        <span class="ticker-item">
+          <span>CANCÚN:</span>
+          <span class="ticker-highlight">29°C 🏖️</span>
+        </span>
+        <span class="ticker-item">
+          <span>SAN MIGUEL:</span>
+          <span class="ticker-highlight">24°C 🌤️</span>
+        </span>
+      </div>
+      <div class="ticker-actions">
+        <button class="ticker-btn" onclick="window.print()">🖨️ Print Broadsheet</button>
+        <button class="ticker-btn" onclick="openModal('editions-modal')">🗞️ Edition Archive</button>
+      </div>
+    </header>
+
+    <!-- Top Newspaper Meta Header Line -->
+    <div class="top-meta-bar">
+      <div>VOL.1 • NO.01</div>
+      <div class="top-meta-center">OCTOBER 8, 2026</div>
+      <div>A WEEKLY DIGITAL NEWSPAPER</div>
+    </div>
+
+    <!-- Main Masthead (Cabecera Principal) -->
+    <div class="masthead-main">
+      <!-- 1. Horizontal Logo -->
+      <div class="masthead-brand">
+        <a href="#" title="Mex-Ahoy! Frontpage">
+          <img 
+            src="assets/images/mex_ahoy_logo_horizontal.png" 
+            alt="Mex-Ahoy! - Your Weekly Look Into Mexico" 
+            class="masthead-logo-img"
+          >
+        </a>
+      </div>
+
+      <!-- 2. Separate Mexico Map -->
+      <div 
+        class="masthead-map-container" 
+        id="masthead-mexico-map" 
+        title="Click to explore Mexican states and regional stories"
+      >
+        <img 
+          src="assets/images/mexico_map.png" 
+          alt="Map of the United Mexican States" 
+          class="masthead-map-img"
+        >
+        <span class="map-badge-hint">Explore Map 🗺️</span>
+      </div>
+
+      <!-- 3. Vertical Rule Divider -->
+      <div class="masthead-divider"></div>
+
+      <!-- 4. Editorial Pillar Core List -->
+      <div class="masthead-pillars">
+        <span class="pillar-item" title="Click to explore stories about Mexican People">People</span>
+        <span class="pillar-item" title="Click to explore Places &amp; Expeditions">Places</span>
+        <span class="pillar-item" title="Click to explore Mexican Arts &amp; Culture">Culture</span>
+        <span class="pillar-item pillar-highlight" title="Click to explore in-depth journalism on The Real Mexico">The Real Mexico</span>
+      </div>
+    </div>
+
+    <!-- Primary Navigation Bar -->
+    <nav class="navbar-primary">
+      <button class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Toggle navigation menu">☰</button>
+      
+      <ul class="nav-links" id="nav-links-list">
+        <li class="nav-item active"><a href="#politics">POLITICS</a></li>
+        <li class="nav-item"><a href="#culture">CULTURE</a></li>
+        <li class="nav-item"><a href="#living">LIVING IN MEXICO</a></li>
+        <li class="nav-item"><a href="#travel">TRAVEL</a></li>
+        <li class="nav-item"><a href="#food">FOOD &amp; DRINK</a></li>
+        <li class="nav-item"><a href="#opinion">OPINION</a></li>
+        <li class="nav-item"><a href="#expat">EXPAT LIFE</a></li>
+        <li class="nav-item"><a href="#history">HISTORY</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-past-editions" id="btn-past-editions">PAST EDITIONS</button>
+        <button class="btn-search-trigger" id="btn-search-nav" title="Search articles">🔍</button>
+      </div>
+    </nav>
+
+    <!-- Main Newspaper Frontpage Grid -->
+    <main class="frontpage-grid">
+      
+      <!-- Top Fold: Lead Story (Palacio Nacional) & The Editor's Desk -->
+      <section class="lead-section">
+        
+        <!-- Left Side: Lead Story (Top Headline) -->
+        <article class="hero-article-wrapper">
+          <figure class="hero-figure" data-article-id="us-ambassador-johnson-public-figure" style="cursor: pointer;">
+            <img 
+              src="assets/images/hero_palacio.jpg" 
+              alt="National Palace overlooking Mexico City Zócalo"
+            >
+            <figcaption>The National Palace in Mexico City, where Ambassador Ronald Johnson met with President Claudia Sheinbaum following the Querétaro controversy.</figcaption>
+          </figure>
+
+          <div class="hero-content">
+            <span class="eyebrow-tag red" style="cursor:pointer;" onclick="navigateToCategory('politics')" title="View all Politics stories">NEWS ANALYSIS • DIPLOMATIC AFFAIRS</span>
+            <h2 class="hero-headline" data-article-id="us-ambassador-johnson-public-figure">US Ambassador Johnson Steps Up as a Public Figure</h2>
+            <p class="hero-deck">From Querétaro’s controversial police academy to secret CIA ties in Chihuahua, Washington’s envoy tests diplomatic boundaries with the Sheinbaum administration.</p>
+            <div class="byline">By Ricardo Castillo</div>
+            <p class="hero-lead-text">
+              US Ambassador to Mexico Ronald Johnson’s appearance at the cornerstone laying of a new state police academy in Querétaro has sparked a sharp constitutional dispute with President Claudia Sheinbaum—marking the envoy’s second high-profile controversy in opposition-governed states.
+            </p>
+            <button class="read-more-btn" data-article-id="us-ambassador-johnson-public-figure">
+              READ FULL ANALYSIS <span>&rarr;</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Right Side: The Editor's Desk Sidebar -->
+        <aside class="editor-desk-sidebar">
+          <div class="editor-desk-box">
+            <div class="editor-banner">THE EDITOR'S DESK</div>
+            <h3 class="editor-headline" data-article-id="editor-worth-understanding">A Mexico Worth Understanding</h3>
+            <div class="byline">By Ricardo Castillo</div>
+            <div class="editor-body">
+              <p>Every week, we bring you clear, thoughtful and insightful stories about the Mexico that matters — its people, its cultures, its opportunities and its challenges.</p>
+              <p>Our goal is simple: to help you understand a complex and fascinating country.</p>
+            </div>
+            <button class="read-editor-btn" data-article-id="editor-worth-understanding">
+              READ THE EDITOR'S NOTE <span>&rarr;</span>
+            </button>
+          </div>
+        </aside>
+
+      </section>
+
+      <!-- Bottom Fold: 3 Secondary Stories -->
+      <section class="secondary-stories-row">
+        
+        <!-- Story 1: Living in Mexico -->
+        <article class="story-card" data-article-id="americans-moving-to-mexico">
+          <div class="story-card-inner">
+            <figure class="story-card-figure">
+              <img 
+                src="assets/images/article_san_miguel.jpg" 
+                alt="Cobblestone street in San Miguel de Allende"
+              >
+            </figure>
+            <div class="story-card-content">
+              <span class="eyebrow-tag green" style="cursor:pointer;" onclick="event.stopPropagation(); navigateToCategory('living')" title="View all Living in Mexico stories">LIVING IN MEXICO</span>
+              <h3 class="story-card-headline">What Americans Should Know Before Moving to Mexico</h3>
+              <p class="story-card-excerpt">Life, costs and practical advice for a smoother transition.</p>
+              <button class="read-more-btn">READ MORE <span>&rarr;</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 2: Culture & Traditions -->
+        <article class="story-card" data-article-id="mexico-beyond-tourist-trail">
+          <div class="story-card-inner">
+            <figure class="story-card-figure">
+              <img 
+                src="assets/images/article_market.jpg" 
+                alt="Traditional market vendor with fruits and produce"
+              >
+            </figure>
+            <div class="story-card-content">
+              <span class="eyebrow-tag green" style="cursor:pointer;" onclick="event.stopPropagation(); navigateToCategory('culture')" title="View all Culture stories">CULTURE &amp; TRADITIONS</span>
+              <h3 class="story-card-headline">The Mexico Beyond the Tourist Trail</h3>
+              <p class="story-card-excerpt">From vibrant markets to living traditions, discover the real Mexico.</p>
+              <button class="read-more-btn">READ MORE <span>&rarr;</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 3: Travel -->
+        <article class="story-card" data-article-id="hidden-gems-caribbean-coast">
+          <div class="story-card-inner">
+            <figure class="story-card-figure">
+              <img 
+                src="assets/images/article_caribbean.jpg" 
+                alt="Turquoise Caribbean waters and Mayan cliff ruins"
+              >
+            </figure>
+            <div class="story-card-content">
+              <span class="eyebrow-tag green" style="cursor:pointer;" onclick="event.stopPropagation(); navigateToCategory('travel')" title="View all Travel stories">TRAVEL</span>
+              <h3 class="story-card-headline">Hidden Gems Along Mexico's Caribbean Coast</h3>
+              <p class="story-card-excerpt">Beautiful places beyond the crowds.</p>
+              <button class="read-more-btn">READ MORE <span>&rarr;</span></button>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Interactive Regional Explorer Banner -->
+      <section class="interactive-banner">
+        <div class="interactive-banner-left">
+          <span class="interactive-banner-icon">🗺️</span>
+          <div>
+            <h4 class="interactive-banner-title">Explore Mexico Region by Region</h4>
+            <p class="interactive-banner-subtitle">From the Baja vineyards to the Yucatán cenotes — discover local journalism from all 32 federal entities.</p>
+          </div>
+        </div>
+        <button class="btn-open-explorer" id="btn-explore-map">Open Regional Map Explorer</button>
+      </section>
+
+      <!-- Newsletter Signup Ad Box -->
+      <section class="newsletter-section">
+        <h3 class="newsletter-title">Anchor Your Week with Mex-Ahoy!</h3>
+        <p class="newsletter-subtitle">Join over 45,000 expatriates, investors, and Mexico enthusiasts who receive our curated Thursday briefing directly in their inbox.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input 
+            type="email" 
+            class="newsletter-input" 
+            placeholder="Enter your email address..." 
+            required
+            aria-label="Email for Mex-Ahoy newsletter"
+          >
+          <button type="submit" class="newsletter-submit">Subscribe Free</button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Newspaper Colophon & Footer -->
+    <footer class="newspaper-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/mexico_map.png" alt="Mexico Emblem" class="footer-logo-thumb">
+          <div>
+            <strong>Mex-Ahoy!</strong> — <em>Your Weekly Look Into Mexico</em>
+            <div style="font-size:0.7rem; color:var(--text-light);">Published every Thursday morning • Mexico City &amp; Nationwide</div>
+          </div>
+        </div>
+        
+        <ul class="footer-nav" style="flex-wrap:wrap; gap:10px 16px;">
+          <li><a href="#" onclick="showFrontPage(); return false;">Front Page</a></li>
+          <li><a href="#politics" onclick="navigateToCategory('politics'); return false;">Politics</a></li>
+          <li><a href="#culture" onclick="navigateToCategory('culture'); return false;">Culture</a></li>
+          <li><a href="#living" onclick="navigateToCategory('living'); return false;">Living</a></li>
+          <li><a href="#travel" onclick="navigateToCategory('travel'); return false;">Travel</a></li>
+          <li><a href="#food" onclick="navigateToCategory('food'); return false;">Food &amp; Drink</a></li>
+          <li><a href="#opinion" onclick="navigateToCategory('opinion'); return false;">Opinion</a></li>
+          <li><a href="#expat" onclick="navigateToCategory('expat'); return false;">Expat Life</a></li>
+          <li><a href="#history" onclick="navigateToCategory('history'); return false;">History</a></li>
+          <li><a href="#" onclick="openModal('editions-modal'); return false;">Archive</a></li>
+          <li><a href="#" onclick="openModal('map-modal'); return false;">Regional Index</a></li>
+          <li><a href="#about" onclick="loadArticleIntoReader('editor-worth-understanding'); return false;">About</a></li>
+          <li><a href="#" onclick="window.print(); return false;">Print Edition</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mex-Ahoy! Media Publishing Group. All rights reserved. ISSN 2891-4402.</div>
+        <div>Ricardo Castillo, Editor-in-Chief • Printed digitally in Mexico City</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ========================================================================
+       MODAL: FULL ARTICLE READER
+       ======================================================================== -->
+  <div class="modal-overlay" id="article-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title-meta">MEX-AHOY! • DESPACHO EDITORIAL</span>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scrollable-body" id="article-reader-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: REGIONAL MAP EXPLORER
+       ======================================================================== -->
+  <div class="modal-overlay" id="map-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title-meta">EXPLORADOR REGIONAL DE MÉXICO</span>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scrollable-body">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
+          <img src="assets/images/mexico_map.png" alt="Mexico Map" style="height:60px;">
+          <div>
+            <h2 style="font-family:var(--font-serif-headline); font-size:1.6rem; color:var(--color-green-dark); margin:0;">
+              Discover Mexico Across 6 Geographic Corridors
+            </h2>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin:4px 0 0;">
+              Click any territory to see featured stories, cultural reports, and expat guides.
+            </p>
+          </div>
+        </div>
+        <div class="explorer-grid" id="map-explorer-regions">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: PAST EDITIONS ARCHIVE
+       ======================================================================== -->
+  <div class="modal-overlay" id="editions-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title-meta">HEMEROTECA DIGITAL • PAST EDITIONS</span>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scrollable-body">
+        <h2 style="font-family:var(--font-serif-headline); font-size:1.6rem; color:var(--color-green-dark); margin-bottom:6px;">
+          The Mex-Ahoy! Issue Archive
+        </h2>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">
+          Browse previous weekly editions, special thematic reports, and printable broadsheets.
+        </p>
+        <div class="editions-list" id="editions-list-content">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: SEARCH
+       ======================================================================== -->
+  <div class="modal-overlay" id="search-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title-meta">SEARCH MEX-AHOY!</span>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scrollable-body">
+        <input 
+          type="text" 
+          id="newspaper-search-input" 
+          class="newsletter-input" 
+          placeholder="Search by keyword, topic, or author (e.g., Claudia, Expat, Tulum, Mezcal)..."
+          style="width:100%; margin-bottom:16px; font-size:1rem; padding:12px;"
+        >
+        <div id="search-results-list">
+          <p style="color:var(--text-muted); font-size:0.85rem;">Type to search articles...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/articles-data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

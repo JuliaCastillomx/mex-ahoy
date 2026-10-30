@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Suscriptores del boletín de Mex-Ahoy!
+    match /subscribers/{subscriberId} {
+      allow create, update: if request.resource.data.keys().hasAll(['email'])
+                            && request.resource.data.email is string
+                            && request.resource.data.email.matches('^[^@]+@[^@]+\\.[^@]+$');
+      allow read, delete: if true;
+    }
+    // Artículos sincronizados desde el panel editorial
+    match /articles/{articleId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
