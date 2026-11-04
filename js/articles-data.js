@@ -266,6 +266,54 @@ const ARTICLES = {
   },
 
   // --- 4. TRAVEL ---
+  'gran-acuario-mazatlan-best-tourism-product': {
+    id: 'gran-acuario-mazatlan-best-tourism-product',
+    category: 'TRAVEL',
+    categoryClass: 'travel',
+    tag: 'National Tourism Award • Mazatlán',
+    pillar: 'Places',
+    title: 'Gran Acuario Mazatlán Wins Award for Best Tourism Product',
+    subtitle: 'The venue dedicated to the marine life of the Sea of Cortez was recognized at the El Ángel del Turismo National Awards, held in Puebla.',
+    author: 'Mex-Ahoy! Editorial Desk',
+    authorRole: 'Tourism & Coastal Destinations',
+    date: 'November 3, 2026',
+    issue: 'Vol. 1 • No. 01',
+    readTime: '4 min read',
+    image: 'assets/images/acuario_mazatlan_oceanico.jpg',
+    imageCaption: 'One of the monumental viewing windows at Gran Acuario Mazatlán, bringing visitors face to face with the marine biodiversity of the Sea of Cortez.',
+    lead: "The Gran Acuario Mazatlán has become one of the attractions expanding the port’s tourism offerings. Its approach to bringing visitors closer to the biodiversity of the Sea of Cortez and the opportunity to interact with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.",
+    body: `
+      <p class="drop-cap">The Gran Acuario Mazatlán has become one of the attractions that expand the port’s tourism offerings. Its proposal to bring visitors closer to the biodiversity of the Sea of Cortez and the possibility of interacting with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.</p>
+
+      <p>Located facing the coastal landscape of Mazatlán, the venue offers a journey through the ecosystems that give life to the so-called “Aquarium of the World.” Its architecture, designed by the firm of Mexican architect Tatiana Bilbao, establishes a dialogue with the surroundings right from the exterior. Upon entering, visitors discover distinct habitats that lead from intertidal and coastal zones all the way to the open ocean.</p>
+
+      <div class="article-photo-grid">
+        <figure class="article-figure-inline">
+          <img src="assets/images/acuario_mazatlan_arrecife.jpg" alt="Cylindrical coral reef exhibit at Gran Acuario Mazatlán">
+          <figcaption>A towering cylindrical coral reef habitat showcasing the vibrant marine ecosystems of the Sea of Cortez.</figcaption>
+        </figure>
+        <figure class="article-figure-inline">
+          <img src="assets/images/acuario_mazatlan_medusas.jpg" alt="Visitors observing the illuminated jellyfish exhibit at Gran Acuario Mazatlán">
+          <figcaption>Visitors admire the glowing jellyfish habitat during their journey through the aquarium’s marine galleries.</figcaption>
+        </figure>
+      </div>
+
+      <p>One of the most striking moments takes place in front of its large viewing windows, which allow visitors to observe different aquatic species up close and learn about aspects of their behavior. Among its inhabitants are Humboldt penguins, sharks, and rays. It is also home to capybaras, birds, and deer. Throughout the tour, the exhibitions bring the public closer to the importance of these species and their conservation.</p>
+
+      <div class="article-award-split">
+        <figure class="article-award-figure">
+          <img src="assets/images/acuario_mazatlan_premio.jpg" alt="Mireya Sosa Osuna and Rafael Lizárraga Favela with the El Ángel del Turismo award">
+          <figcaption>Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, Director of Gran Acuario Mazatlán, with the El Ángel del Turismo 2026 trophy and Best Tourism Product diploma.</figcaption>
+        </figure>
+        <div>
+          <p>The award was received by businessman Ernesto Coppel Kelly, accompanied by Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, director of the venue, during the ceremony that brought together representatives from different sectors of the country’s tourism industry.</p>
+          <p style="margin-bottom:0;">For Mazatlán, this recognition gives national projection to one of its most representative attractions. The Gran Acuario is part of a tourism offering that also includes the Historic Center and its cultural spaces, the <em>malecón</em> boardwalk, gastronomy, and sunsets facing the Pacific—elements that distinguish the port as one of the most renowned beach destinations in Mexico.</p>
+        </div>
+      </div>
+    `,
+    relatedIds: ['hidden-gems-caribbean-coast', 'copper-canyon-chepe-train', 'mexico-beyond-tourist-trail']
+  },
+
   'hidden-gems-caribbean-coast': {
     id: 'hidden-gems-caribbean-coast',
     category: 'TRAVEL',
@@ -300,7 +348,7 @@ const ARTICLES = {
       <h3>3. Puerto Morelos: The Timeless Fishing Haven</h3>
       <p>Nestled midway between Cancún and Playa del Carmen, Puerto Morelos has tenaciously preserved its charming seaside village identity. With its iconic tilted lighthouse, vibrant municipal square, and a National Marine Park protecting a world-class barrier reef just 500 meters offshore, it remains the ultimate refuge for travelers seeking tranquility.</p>
     `,
-    relatedIds: ['copper-canyon-chepe-train', 'mexico-beyond-tourist-trail']
+    relatedIds: ['gran-acuario-mazatlan-best-tourism-product', 'copper-canyon-chepe-train', 'mexico-beyond-tourist-trail']
   },
 
   'copper-canyon-chepe-train': {
@@ -331,7 +379,7 @@ const ARTICLES = {
       <h3>Meeting the Rarámuri Runners</h3>
       <p>The high plateau is the ancestral home of the Rarámuri (Tarahumara) people, legendary endurance runners whose footwear—simple sandals carved from tire tread called <em>huaraches</em>—has carried them across hundreds of rugged mountain kilometers for generations. Stopping in Creel and Cerocahui allows travelers to support community-led cooperative lodges and trek ancient forest trails.</p>
     `,
-    relatedIds: ['hidden-gems-caribbean-coast', 'mexico-beyond-tourist-trail']
+    relatedIds: ['gran-acuario-mazatlan-best-tourism-product', 'hidden-gems-caribbean-coast', 'mexico-beyond-tourist-trail']
   },
 
   // --- 5. FOOD & DRINK ---
@@ -708,8 +756,8 @@ const MEXICO_REGIONS = {
   pacific: {
     name: 'Pacific Coast & West',
     states: ['Jalisco', 'Nayarit', 'Colima', 'Michoacán', 'Sinaloa', 'Guerrero'],
-    highlights: 'Guadalajara and the Tequila valleys, Riviera Nayarit surf breaks, Puerto Vallarta, and Day of the Dead traditions.',
-    sampleArticleId: 'manila-galleon-maritime-route'
+    highlights: 'Mazatlán’s award-winning Gran Acuario, Guadalajara and the Tequila valleys, Riviera Nayarit surf breaks, and Day of the Dead traditions.',
+    sampleArticleId: 'gran-acuario-mazatlan-best-tourism-product'
   },
   south: {
     name: 'Oaxaca & Southern Highlands',

@@ -86,6 +86,26 @@ function refreshFrontpageHero() {
     if (editH3) editH3.textContent = editorArt.title;
     if (editByline && editorArt.author) editByline.textContent = 'By ' + editorArt.author;
   }
+
+  // Dynamically sync secondary story cards with latest articles in each section
+  const secondaryCards = document.querySelectorAll('.secondary-stories-row .story-card');
+  const sectionOrder = ['LIVING IN MEXICO', 'CULTURE & TRADITIONS', 'TRAVEL'];
+  secondaryCards.forEach((card, index) => {
+    const targetCat = sectionOrder[index];
+    const latestInCat = articlesList.find(a => a.id !== heroArt.id && a.category === targetCat);
+    if (latestInCat) {
+      card.setAttribute('data-article-id', latestInCat.id);
+      const img = card.querySelector('.story-card-figure img');
+      const h3 = card.querySelector('.story-card-headline');
+      const p = card.querySelector('.story-card-excerpt');
+      if (img && latestInCat.image) {
+        img.src = latestInCat.image;
+        img.alt = latestInCat.title;
+      }
+      if (h3) h3.textContent = latestInCat.title;
+      if (p && latestInCat.subtitle) p.textContent = latestInCat.subtitle;
+    }
+  });
 }
 
 // --- Modal Management ---
