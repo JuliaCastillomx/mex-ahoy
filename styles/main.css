@@ -1643,6 +1643,55 @@ button {
     max-width: 320px;
     margin: 0 auto;
   }
+  .politics-dispatches-grid {
+    grid-template-columns: 1fr;
+  }
+  .politics-card-featured {
+    grid-column: span 1;
+  }
+  .politics-card-featured .story-card-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Frontpage Politics Dispatches Grid */
+.politics-frontpage-section {
+  border-top: 2px solid var(--border-rule);
+  border-bottom: 1px solid var(--border-rule);
+  padding: 22px 0 26px;
+  margin-bottom: 24px;
+}
+
+.politics-dispatches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 16px;
+}
+
+.politics-card-featured {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 18px;
+}
+
+.politics-card-featured .story-card-inner {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.politics-card-featured .story-card-figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.politics-card-featured .story-card-headline {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 540px) {

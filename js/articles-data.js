@@ -1,667 +1,584 @@
-// Mex-Ahoy! Editorial Articles Database
-// Volume 1, Issue 01 - October 8, 2026
+/**
+ * Mex-Ahoy! - Full Editorial Content Database
+ * Auto-updated with 7 current Politics Dispatches (November 4, 2026)
+ */
 
 const ARTICLES = {
-  // --- 1. POLITICS ---
-  'us-ambassador-johnson-public-figure': {
-    id: 'us-ambassador-johnson-public-figure',
-    category: 'POLITICS',
-    categoryClass: 'politics',
-    tag: 'News Analysis • Diplomatic Affairs',
-    pillar: 'The Real Mexico',
-    title: 'US Ambassador Johnson Steps Up as a Public Figure',
-    subtitle: 'From Querétaro’s controversial police academy to secret CIA ties in Chihuahua, Washington’s envoy tests diplomatic boundaries with the Sheinbaum administration.',
-    author: 'Ricardo Castillo',
-    authorRole: 'Senior Political Analyst & Editor-in-Chief',
-    date: 'October 13, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/hero_palacio.jpg',
-    imageCaption: 'The National Palace in Mexico City, where Ambassador Ronald Johnson met with President Claudia Sheinbaum following the Querétaro controversy.',
-    lead: "US Ambassador to Mexico Ronald Johnson’s appearance at the cornerstone laying of a new state police academy in Querétaro has sparked a sharp constitutional dispute with President Claudia Sheinbaum—marking the envoy’s second high-profile controversy involving opposition-governed states.",
-    body: `
-      <p class="drop-cap">U.S. Ambassador to Mexico Ronald Johnson on Saturday, October 2, 2026, attended in Querétaro City to be a witness of the laying of the cornerstone for a new Querétaro international state police academy. Johnson attended at the invitation of Querétaro state governor Mauricio Kuri, as the U.S. government is one of the sponsors.</p>
-
-      <p>The event went unnoticed until the following Monday when, in her daily morning press conference, President Claudia Sheinbaum, when asked about it, declared that the potential construction could be “unconstitutional.” She ordered Foreign Relations Secretary Roberto Velasco, as well as top cop Omar García Harfuch, to request an explanation from Gov. Kuri and Ambassador Johnson why, as law demands, the federal government had not been notified about the apparently ceremonial event.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Under the law, state governments must inform the Foreign Relations Secretariat of any security arrangement with a foreign nation.”</p>
-        <cite>— Mexican Federal Legal Framework</cite>
-      </blockquote>
-
-      <h3>An “Oops” From Querétaro</h3>
-      <p>Gov. Kuri denied any wrongdoing but promised to follow federal guidelines—a motion, he was informed, he should have carried out before proceeding to the cornerstone ceremony. Under the law, state governments must inform the Foreign Relations Secretariat of any security arrangement with a foreign nation. Kuri said he acted in cooperation with a U.S. invitation, denying any action against the federal Mexican government. In short, his excuse sounded more like an “oops” than a formal apology, but the cornerstone was set and the $30 million peso erection would continue as planned.</p>
-
-      <p>On the other hand, Ambassador Johnson requested a meeting with President Sheinbaum and was received Thursday evening, Oct. 8, at the National Palace. Only the ambassador did not show up alone, but accompanied by a large group from the Mexico American Chamber of Commerce, representatives of U.S. investors in the nation. Official reports from the gathering are hazy, but apparently Sheinbaum and Johnson did not have a face-to-face discussion, and for the most part, the meeting went on the undeniable truth that American investment is essential for Mexico.</p>
-
-      <p>President Sheinbaum announced after the “business meeting” that she would have a second meeting with Ambassador Johnson “soon,” whenever that may be.</p>
-
-      <p>“Another tempest in a teapot,” commented Bloomberg TV newscaster Guillermo Ortega on the issue of the Querétaro police academy. Maybe yes, but then, maybe not.</p>
-
-      <h3>The Shadow of Chihuahua and CIA Ties</h3>
-      <p>This is the second time that the Ambassador, a former Central Intelligence Agency official, is involved in an event that causes a major press scandal in Mexico. The other one happened last May 19, 2026, after the presence of four CIA agents, two of which died in a car accident after the vehicle they traveled in crashed, along with then Chihuahua state police chief Pedro Oceguera and a driver. The vehicle was part of a five-auto convoy traveling on a winding road. Apparently the vehicle in front of them made a sharp turn, and theirs went straight, falling into a deep ravine.</p>
-
-      <p>Again, the federal government was not informed that CIA agents were in the state, with a major scandal hitting Chihuahua Governor Maru Campos, who, as in the case of Kuri in Querétaro, did not notify the Foreign Relations Secretariat of the presence of the four agents.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Is Ambassador Johnson cunningly approaching President Sheinbaum’s political opponents to feel the administration’s reaction to a different approach to intrigue?”</p>
-        <cite>— Ricardo Castillo, News Analysis</cite>
-      </blockquote>
-
-      <h3>The Opposition Connection &amp; Cross-Border Tensions</h3>
-      <p>One similarity between governors Kuri and Campos is that they both belong to the minority opposition National Action Party (PAN). In both cases, in the Senate and at the Chamber of Deputies, the governors were accused of “sedition” and even “treason.”</p>
-
-      <p>Gov. Campos confessed that the agents were “invited” due to a security exchange treaty with Texas Gov. Greg Abbott.</p>
-
-      <p>Another similarity is that both happened with Ambassador Johnson at the helm of the U.S. Embassy in Mexico. It must be stated, however, that in the Chihuahua case his name did not come up in any of the press stories.</p>
-
-      <p>But now with the Querétaro happening, Ronald Johnson’s name has gained popularity, and in particular it is curious that in both events the states are ruled by the PAN, a bitter foe to the ruling Morena majority.</p>
-
-      <p>The question for the Mexican government is if Ambassador Johnson is cunningly approaching President Sheinbaum’s political opponents and feeling the administration’s reaction to a different approach to intrigue?</p>
-
-      <p>This is not just a question, but indeed a suspect position in light of Donald Trump’s desire to intervene inside Mexico to fight organized crime.</p>
-    `,
-    relatedIds: ['what-comes-after-claudia', 'judicial-reform-mexico', 'editor-worth-understanding']
+  "us-ambassador-johnson-public-figure": {
+    "id": "us-ambassador-johnson-public-figure",
+    "category": "POLITICS",
+    "categoryClass": "politics",
+    "tag": "News Analysis • Diplomatic Affairs",
+    "pillar": "The Real Mexico",
+    "title": "US Ambassador Johnson Steps Up as a Public Figure",
+    "subtitle": "From Querétaro’s controversial police academy to secret CIA ties in Chihuahua, Washington’s envoy tests diplomatic boundaries with the Sheinbaum administration.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Senior Political Analyst & Editor-in-Chief",
+    "date": "October 13, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/hero_palacio.jpg",
+    "imageCaption": "The National Palace in Mexico City, where Ambassador Ronald Johnson met with President Claudia Sheinbaum following the Querétaro controversy.",
+    "lead": "US Ambassador to Mexico Ronald Johnson’s appearance at the cornerstone laying of a new state police academy in Querétaro has sparked a sharp constitutional dispute with President Claudia Sheinbaum—marking the envoy’s second high-profile controversy involving opposition-governed states.",
+    "body": "\n      <p class=\"drop-cap\">U.S. Ambassador to Mexico Ronald Johnson on Saturday, October 2, 2026, attended in Querétaro City to be a witness of the laying of the cornerstone for a new Querétaro international state police academy. Johnson attended at the invitation of Querétaro state governor Mauricio Kuri, as the U.S. government is one of the sponsors.</p>\n\n      <p>The event went unnoticed until the following Monday when, in her daily morning press conference, President Claudia Sheinbaum, when asked about it, declared that the potential construction could be “unconstitutional.” She ordered Foreign Relations Secretary Roberto Velasco, as well as top cop Omar García Harfuch, to request an explanation from Gov. Kuri and Ambassador Johnson why, as law demands, the federal government had not been notified about the apparently ceremonial event.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Under the law, state governments must inform the Foreign Relations Secretariat of any security arrangement with a foreign nation.”</p>\n        <cite>— Mexican Federal Legal Framework</cite>\n      </blockquote>\n\n      <h3>An “Oops” From Querétaro</h3>\n      <p>Gov. Kuri denied any wrongdoing but promised to follow federal guidelines—a motion, he was informed, he should have carried out before proceeding to the cornerstone ceremony. Under the law, state governments must inform the Foreign Relations Secretariat of any security arrangement with a foreign nation. Kuri said he acted in cooperation with a U.S. invitation, denying any action against the federal Mexican government. In short, his excuse sounded more like an “oops” than a formal apology, but the cornerstone was set and the $30 million peso erection would continue as planned.</p>\n\n      <p>On the other hand, Ambassador Johnson requested a meeting with President Sheinbaum and was received Thursday evening, Oct. 8, at the National Palace. Only the ambassador did not show up alone, but accompanied by a large group from the Mexico American Chamber of Commerce, representatives of U.S. investors in the nation. Official reports from the gathering are hazy, but apparently Sheinbaum and Johnson did not have a face-to-face discussion, and for the most part, the meeting went on the undeniable truth that American investment is essential for Mexico.</p>\n\n      <p>President Sheinbaum announced after the “business meeting” that she would have a second meeting with Ambassador Johnson “soon,” whenever that may be.</p>\n\n      <p>“Another tempest in a teapot,” commented Bloomberg TV newscaster Guillermo Ortega on the issue of the Querétaro police academy. Maybe yes, but then, maybe not.</p>\n\n      <h3>The Shadow of Chihuahua and CIA Ties</h3>\n      <p>This is the second time that the Ambassador, a former Central Intelligence Agency official, is involved in an event that causes a major press scandal in Mexico. The other one happened last May 19, 2026, after the presence of four CIA agents, two of which died in a car accident after the vehicle they traveled in crashed, along with then Chihuahua state police chief Pedro Oceguera and a driver. The vehicle was part of a five-auto convoy traveling on a winding road. Apparently the vehicle in front of them made a sharp turn, and theirs went straight, falling into a deep ravine.</p>\n\n      <p>Again, the federal government was not informed that CIA agents were in the state, with a major scandal hitting Chihuahua Governor Maru Campos, who, as in the case of Kuri in Querétaro, did not notify the Foreign Relations Secretariat of the presence of the four agents.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Is Ambassador Johnson cunningly approaching President Sheinbaum’s political opponents to feel the administration’s reaction to a different approach to intrigue?”</p>\n        <cite>— Ricardo Castillo, News Analysis</cite>\n      </blockquote>\n\n      <h3>The Opposition Connection &amp; Cross-Border Tensions</h3>\n      <p>One similarity between governors Kuri and Campos is that they both belong to the minority opposition National Action Party (PAN). In both cases, in the Senate and at the Chamber of Deputies, the governors were accused of “sedition” and even “treason.”</p>\n\n      <p>Gov. Campos confessed that the agents were “invited” due to a security exchange treaty with Texas Gov. Greg Abbott.</p>\n\n      <p>Another similarity is that both happened with Ambassador Johnson at the helm of the U.S. Embassy in Mexico. It must be stated, however, that in the Chihuahua case his name did not come up in any of the press stories.</p>\n\n      <p>But now with the Querétaro happening, Ronald Johnson’s name has gained popularity, and in particular it is curious that in both events the states are ruled by the PAN, a bitter foe to the ruling Morena majority.</p>\n\n      <p>The question for the Mexican government is if Ambassador Johnson is cunningly approaching President Sheinbaum’s political opponents and feeling the administration’s reaction to a different approach to intrigue?</p>\n\n      <p>This is not just a question, but indeed a suspect position in light of Donald Trump’s desire to intervene inside Mexico to fight organized crime.</p>\n    ",
+    "relatedIds": [
+      "sheinbaum-mexican-american-wins-plan-michoacan-2026",
+      "democratic-sweep-us-congress-mexico-usmca-impact",
+      "ine-crisis-30-resignations-taddei-fgr-complaint"
+    ]
   },
-
-  'what-comes-after-claudia': {
-    id: 'what-comes-after-claudia',
-    category: 'POLITICS',
-    categoryClass: 'politics',
-    tag: 'National Politics',
-    pillar: 'The Real Mexico',
-    title: 'What Comes After Claudia?',
-    subtitle: 'As the first woman president reshapes Mexico, attention turns to what happens next.',
-    author: 'Ricardo Castillo',
-    authorRole: 'Senior Political Analyst & Editor-in-Chief',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '6 min read',
-    image: 'assets/images/hero_palacio.jpg',
-    imageCaption: 'The National Palace overlooking Mexico City’s Zócalo with the monumental national flag.',
-    lead: "With Claudia Sheinbaum's presidency entering a decisive phase, speculation is growing about who could follow, what challenges they will face, and how Mexico's political landscape might evolve in the coming years.",
-    body: `
-      <p class="drop-cap">With Claudia Sheinbaum’s presidency entering a decisive phase, political observers across the hemisphere are asking a question that once seemed premature: what does Mexican politics look like after the historic tenure of its first female head of state?</p>
-      
-      <p>Sheinbaum stepped into the National Palace carrying the monumental legacy of the Fourth Transformation (4T) initiated by Andrés Manuel López Obrador. Yet over the past two years, her administration has carved its own unmistakable cadence—one defined by technical rigor, targeted infrastructure investment, aggressive renewable energy quotas, and an unflinching diplomatic stance during trade negotiations with Washington.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“The challenge for the next generation of Mexican leadership is not merely continuing social programs, but creating a resilient institutional framework that can withstand global economic volatility.”</p>
-        <cite>— Dra. Elena Morales, Institute of Political Studies, UNAM</cite>
-      </blockquote>
-
-      <h3>The Coalition Under Stress and Evolution</h3>
-      <p>Inside the ruling Morena coalition, the quiet competition for ideological continuity is already palpable. Governors from the industrialized north, eager to leverage nearshoring capital, advocate for pragmatic regulatory deregulation, while southern stalwarts insist on doubling down on state-directed strategic sectors including railways and petrochemicals.</p>
-
-      <p>Meanwhile, the traditional opposition parties—PAN, PRI, and Movimiento Ciudadano—find themselves at a critical crossroads. Having struggled to present a unified alternative during previous federal ballots, new regional leaders in Jalisco, Nuevo León, and Querétaro are pitching a modernized center-left and center-right coalition aimed squarely at Mexico’s burgeoning urban middle class.</p>
-
-      <h3>Nearshoring, Energy, and the 2026 USMCA Review</h3>
-      <p>Beyond internal party dynamics looms the broader economic horizon. The ongoing review of the United States–Mexico–Canada Agreement (USMCA) has placed bilateral supply chains under intense scrutiny. Mexico’s manufacturing heartland continues to absorb record foreign direct investment, but bottlenecks in clean electrical grid transmission and industrial water management remain pivotal test cases.</p>
-
-      <p>Whoever prepares to step forward into the presidential arena will inherit a nation whose geopolitical weight in North America has never been higher, but whose domestic expectations for security, judicial transparency, and shared prosperity have never been more demanding.</p>
-    `,
-    relatedIds: ['us-ambassador-johnson-public-figure', 'judicial-reform-mexico', 'editor-worth-understanding', 'nearshoring-opportunity-or-bubble']
+  "sheinbaum-mexican-american-wins-plan-michoacan-2026": {
+    "id": "sheinbaum-mexican-american-wins-plan-michoacan-2026",
+    "title": "Sheinbaum Celebrates Wins by Mexican-Americans Becerra and Hinojosa in US Elections, Unveils Plan Michoacán Progress",
+    "subtitle": "Following historic gubernatorial victories in California and Texas, Mexico's president reaffirms 'collaboration without subordination' ahead of USMCA talks and rejects Texas's claim over Rio Grande islands.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "6 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • PRESIDENCY & BILATERAL AFFAIRS",
+    "image": "assets/images/politica_sheinbaum_mananera_nov4.png",
+    "imageCaption": "President Claudia Sheinbaum during her morning press conference at the National Palace on November 4, 2026.",
+    "lead": "President Claudia Sheinbaum welcomed the historic victories of Mexican-American candidates Xavier Becerra in California and Gina Hinojosa in Texas following Tuesday's US midterm elections, while stressing that Mexico will continue bilateral trade and security dialogue with Washington under strict respect for national sovereignty.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — Speaking from the National Palace during her Wednesday morning press conference (<em>La Mañanera del Pueblo</em>) on November 4, President Claudia Sheinbaum Pardo reacted to the sweeping results of Tuesday's midterm elections in the United States, highlighting the electoral victories of Mexican-American leaders in the two largest border states.</p>\n\n      <p>According to preliminary figures cited at the briefing, Democrat Xavier Becerra won the California gubernatorial race by a margin of more than two million votes, while in Texas—long the largest Republican stronghold in the United States—Democratic challenger Gina Hinojosa defeated incumbent Governor Greg Abbott by more than 600,000 votes.</p>\n\n      <blockquote>\n        \"It gives us great pleasure to see Mexican-Americans earn this recognition. They have a deep commitment to their states and their own agendas, while also maintaining an enduring bond with Mexican men and women.\"\n        <cite>— President Claudia Sheinbaum Pardo, November 4, 2026</cite>\n      </blockquote>\n\n      <h3>Sovereignty, USMCA Talks, and the Rio Grande Islands Dispute</h3>\n      <p>Addressing the broader shift in Washington—where Democrats secured control of both the US House of Representatives and the Senate—Sheinbaum underscored that irrespective of party majorities on Capitol Hill, the Mexican government will pursue strong bilateral ties anchored in <strong>\"respect for our sovereignty and collaboration without subordination.\"</strong></p>\n\n      <p>\"The discussions related to trade and the review of the USMCA (T-MEC) will continue moving forward just as we have been conducting them,\" the president noted. She also dismissed a recent announcement by Texas authorities claiming state ownership over nine islands in the Rio Grande (<em>Río Bravo</em>), attributing the declaration to US campaign politics and reiterating that territorial jurisdiction along the border cannot be defined unilaterally, as it rests exclusively with the bilateral International Boundary and Water Commission (CILA / IBWC).</p>\n\n      <p>On the diplomatic front, the presidency confirmed that while Sheinbaum will not travel in person to the <strong>30th Ibero-American Summit</strong> taking place November 4–5 in Madrid, Spain, Mexico recognizes the forum as a vital space for international dialogue and cooperation, with Foreign Ministry Undersecretary for North America Roberto Velasco representing the administration.</p>\n\n      <h3>Cabinet Presents Comprehensive 'Plan Michoacán' Report</h3>\n      <p>Wednesday's press conference was also dedicated to a comprehensive cabinet report on the <strong>Plan Michoacán</strong>, detailing federal investments across social welfare, infrastructure, environmental restoration, and agricultural labor rights in the state:</p>\n      <ul>\n        <li><strong>Social Welfare (Bienestar):</strong> Secretary Leticia Ramírez reported that over <strong>30.4 billion pesos</strong> have been invested in social programs in Michoacán so far in 2026, reaching 629,000 beneficiaries of the universal senior pension and 136,000 recipients of the <em>Pensión Mujeres Bienestar</em>.</li>\n        <li><strong>Universal Electricity Coverage (Sener):</strong> Energy Secretary Luz Elena González announced the completion of 1,256 electrification projects totaling 508 million pesos, achieving universal electricity coverage across Michoacán.</li>\n        <li><strong>Lake Pátzcuaro Restoration (Conagua):</strong> National Water Commission Director Efraín Morales detailed the cleanup of Lake Pátzcuaro through the construction of 116 drainage collectors to halt wastewater discharges alongside 10 water treatment plants.</li>\n        <li><strong>Agro-Export Labor Certification (STPS):</strong> Labor Secretary Marath Bolaños highlighted the rollout of the Labor Certificate for Agro-Exportation—guaranteeing social security coverage for agricultural workers in Michoacán's avocado and berry sectors—along with 12,294 youth enrolled in <em>Jóvenes Construyendo el Futuro</em>.</li>\n        <li><strong>Forestry &amp; Tourism Growth:</strong> Environment Secretary Alicia Bárcena reported 168 million pesos invested in sustainable forestry and resin production, while Tourism Secretary Josefina Rodríguez Zamora announced a 10.1% surge in Michoacán tourism between January and August, bringing 2.4 million visitors and $186 million USD in economic impact.</li>\n      </ul>\n    ",
+    "relatedIds": [
+      "democratic-sweep-us-congress-mexico-usmca-impact",
+      "us-ambassador-johnson-public-figure",
+      "ine-crisis-30-resignations-taddei-fgr-complaint"
+    ]
   },
-
-  'judicial-reform-mexico': {
-    id: 'judicial-reform-mexico',
-    category: 'POLITICS',
-    categoryClass: 'politics',
-    tag: 'Legal Affairs',
-    pillar: 'The Real Mexico',
-    title: 'Judicial Reform in Motion: What the Changes Mean for Daily Life & Commerce',
-    subtitle: 'An objective breakdown of how the popular election of judges is reshaping Mexican jurisprudence.',
-    author: 'Mariana Galindo',
-    authorRole: 'Constitutional Law Correspondent',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/hero_palacio.jpg',
-    imageCaption: 'The Supreme Court of Justice of the Nation (SCJN) in historic downtown Mexico City.',
-    lead: "As the first cohorts of publicly elected magistrates assume office, international investors and ordinary citizens alike are closely observing how legal certainty, commercial arbitration, and civil litigation operate under the new paradigm.",
-    body: `
-      <p class="drop-cap">Few legislative shifts in modern Mexican history have ignited as much fervent debate as the 2024 constitutional judicial reform. Now, two years into its phased implementation, the theoretical arguments have given way to practical realities in courtrooms across the 32 states.</p>
-
-      <p>Proponents of the reform argued that the judicial branch had long suffered from insular corporatism and nepotism, demanding direct democratic accountability. Critics, conversely, warned of potential politicization and the erosion of technical judicial expertise. The reality on the ground in late 2026 reveals a nuanced picture.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“International arbitration clauses and bilateral investment treaties have maintained commercial continuity, while local tribunals are seeing unprecedented public scrutiny.”</p>
-        <cite>— Lic. Roberto Garza, Mexican Bar Association</cite>
-      </blockquote>
-
-      <h3>Impact on International Contracts and Nearshoring</h3>
-      <p>Foreign enterprises operating in Querétaro, Nuevo León, and Baja California have largely adapted by standardizing international arbitration mechanisms under ICC and ICSID rules. Meanwhile, the Federal Judicial Council’s newly established disciplinary tribunal has introduced strict performance metrics for district judges handling commercial disputes.</p>
-    `,
-    relatedIds: ['what-comes-after-claudia', 'nearshoring-opportunity-or-bubble']
+  "democratic-sweep-us-congress-mexico-usmca-impact": {
+    "id": "democratic-sweep-us-congress-mexico-usmca-impact",
+    "title": "Democratic Sweep in US Congress Poses New Tests for Mexico and the USMCA Review, Analysts Warn",
+    "subtitle": "While Tuesday's midterm elections curb Donald Trump's legislative room for maneuver during his final two years, trade and political experts caution that a Democratic Congress could harden scrutiny over labor, security, and tariffs.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "7 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • US-MEXICO RELATIONS & TRADE",
+    "image": "assets/images/politica_tmec_congreso_eu.jpg",
+    "imageCaption": "Capitol Hill in Washington, D.C., where Democrats captured control of both legislative chambers in Tuesday's midterm elections.",
+    "lead": "The political reconfiguration in Washington following the November 3 midterm elections—in which Democrats secured majorities in both the House of Representatives and the Senate—will reshape the bilateral landscape for Mexico, its top trading partner, as North America enters a decisive phase of the USMCA review.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — As vote tallies early Wednesday confirmed a decisive Democratic victory in both chambers of the United States Congress, Mexican economic and political analysts warned that a legislature controlled by the opposition to President Donald Trump will not automatically translate into smoother sailing for Mexico.</p>\n\n      <p>George I. González, a US political analyst, former White House official, and founder of the consultancy Complex, cautioned that a Democratic majority on Capitol Hill presents distinct challenges for the Sheinbaum administration, as congressional committees are expected to harden their stance on border security, organized crime, anti-corruption oversight, and labor enforcement.</p>\n\n      <blockquote>\n        \"Mexico finds itself in a delicate position, because a Democratic return to congressional power is not necessarily favorable. While lawmakers will weigh whether to pursue new oversight battles against Trump or focus on the economy, trade and compliance scrutiny toward Mexico will intensify.\"\n        <cite>— George I. González, Founder of Complex</cite>\n      </blockquote>\n\n      <h3>The USMCA Review and Section 232 Tariffs</h3>\n      <p>According to a strategic assessment published Wednesday by political risk firm <strong>Integralia</strong>, the review of the United States–Mexico–Canada Agreement (USMCA / T-MEC) will proceed along a demanding track regardless of the midterm outcome. Following Washington's refusal to grant an automatic 16-year extension, the treaty now operates under annual joint reviews that keep North American supply chains under constant negotiation.</p>\n\n      <p>Integralia noted that while Democratic control of the House and Senate will increase domestic political confrontation in Washington and constrain Trump's legislative agenda, the US president retains broad executive authority under <strong>Sections 232 and 301</strong> to maintain or modify tariffs—which have ranged from 15% to 50% on steel, aluminum, and select automotive components—and to demand stricter regional content rules aimed at curbing Chinese inputs.</p>\n\n      <p>However, analysts pointed out one potential silver lining for Mexican exporters: painful Republican losses in industrial and agricultural states heavily exposed to retaliatory tariffs could generate pressure within the GOP itself to moderate unilateral trade barriers.</p>\n\n      <h3>Market Outlook from UBS and Banamex</h3>\n      <p>Financial institutions also weighed in on the post-election landscape on Wednesday morning:</p>\n      <ul>\n        <li><strong>Banamex Economic Research</strong> warned that the midterm results will significantly narrow President Trump's room for maneuver to push fiscal or legislative trade overhauls during the final two years of his term, shifting the White House's reliance toward executive actions and bilateral security pressure.</li>\n        <li><strong>UBS Global Wealth Management</strong> noted that while the new congressional balance will shape medium-term regulatory policy, legislative gridlock or narrow majorities will prevent drastic shifts in US tax policy, leaving market fundamentals—artificial intelligence investment, corporate earnings, inflation, and interest rates—as the primary drivers of North American financial flows.</li>\n      </ul>\n    ",
+    "relatedIds": [
+      "sheinbaum-mexican-american-wins-plan-michoacan-2026",
+      "us-ambassador-johnson-public-figure",
+      "mexican-senate-approves-anti-meme-digital-copyright-law"
+    ]
   },
-
-  // --- 2. CULTURE ---
-  'mexico-beyond-tourist-trail': {
-    id: 'mexico-beyond-tourist-trail',
-    category: 'CULTURE & TRADITIONS',
-    categoryClass: 'culture',
-    tag: 'Cultural Dispatch',
-    pillar: 'Culture',
-    title: 'The Mexico Beyond the Tourist Trail',
-    subtitle: 'From vibrant markets to living traditions, discover the real Mexico.',
-    author: 'Xóchitl Cruz',
-    authorRole: 'Culture & Ethnography Writer',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/article_market.jpg',
-    imageCaption: 'A traditional municipal tianguis alive with native produce, herbs, and ancestral market customs.',
-    lead: "From vibrant markets to living traditions, discover the real Mexico. Step away from packaged tour buses and into the beating heart of local tianguis, artisan guildhalls, and communal celebrations.",
-    body: `
-      <p class="drop-cap">To understand Mexico, one must start not in a museum or five-star resort lobby, but in a bustling morning <em>tianguis</em>. The word itself comes from the Nahuatl <em>tiyanquiztli</em>, referring to the open-air market traditions that have connected rural harvesters with town dwellers for well over a millennium.</p>
-
-      <p>Under towering sheets of pink, yellow, and orange tarps, sensory overload is an understatement. The citrus aroma of freshly squeezed key limes blends with the pungent sweetness of copal incense, the earthy scent of heirloom blue corn tortillas puffing on a clay comal, and the rhythmic shouts of fruit vendors calling out <em>¡Pásele, güerita, marchante, aquí hay calidad!</em></p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Our markets are not tourist exhibits; they are our living community ledger, where relationships are forged across generations through fresh food and respect.”</p>
-        <cite>— Doña Rosalía Morales, Tlacolula de Matamoros Market, Oaxaca</cite>
-      </blockquote>
-
-      <h3>Preserving Ancestral Crafts</h3>
-      <p>In communities like Santa Clara del Cobre in Michoacán, master metalsmiths still hand-hammer massive copper cauldrons with synchronized blows that echo through cobbled alleyways. In the highlands of Chiapas, Tzotzil and Tzeltal master weavers use the ancestral backstrap loom to tell cosmological stories woven into every geometric diamond pattern of a cotton huipil.</p>
-
-      <p>Engaging with the real Mexico means stepping into these spaces with humility, asking questions, buying directly from families who have preserved these traditions for centuries, and appreciating the immense cultural tapestry that makes this country an irreplaceable global treasure.</p>
-    `,
-    relatedIds: ['alebrijes-oaxaca-copal', 'seven-moles-of-oaxaca', 'americans-moving-to-mexico']
+  "ine-crisis-30-resignations-taddei-fgr-complaint": {
+    "id": "ine-crisis-30-resignations-taddei-fgr-complaint",
+    "title": "INE Crisis Deepens: 30 Officials Tied to Former Chief Guadalupe Taddei Resign as Councillors Prepare Criminal Complaint",
+    "subtitle": "One week after Taddei stepped down amid an ASF audit into 8.87 billion pesos in irregular contracts, Mexico's 10 electoral councillors agree to file a complaint with the Attorney General's Office while Congress delays the succession vote.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "6 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • ELECTORAL INSTITUTIONS",
+    "image": "assets/images/politica_ine_taddei.jpg",
+    "imageCaption": "Headquarters of the National Electoral Institute (INE) in Mexico City, where 30 senior officials have resigned over the past week.",
+    "lead": "An institutional earthquake continues to shake Mexico's National Electoral Institute (INE): 30 officials linked to former Council President Guadalupe Taddei have submitted their resignations over the past week, even as the body's 10 remaining electoral councillors agreed to file a formal criminal complaint before the Attorney General's Office (FGR) over an alleged contract corruption network.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — One week after the resignation of INE Council President Guadalupe Taddei, the internal fallout inside Mexico's autonomous electoral authority has widened dramatically. According to official institute records released this week, <strong>30 officials have departed</strong>, including 17 staff members from the presidency's office—representing at least half of that office's payroll—alongside senior division directors responsible for signing goods and services contracts.</p>\n\n      <h3>Wave of High-Level Departures Across Strategic Divisions</h3>\n      <p>Among the highest-ranking officials who submitted their resignations are Chief of Staff of the Presidency <strong>Carlos Daniel Luna Rosas</strong>, along with three national division directors:</p>\n      <ul>\n        <li><strong>José Alberto Pérez de Acha</strong>, Director of the Technical Unit for Information Technology Services;</li>\n        <li><strong>Iliana Araceli Hernández Gómez</strong>, Director of the Technical Unit for Gender Equality and Non-Discrimination;</li>\n        <li><strong>Sergio Uzeta Murcio</strong>, National Coordinator of Social Communication.</li>\n      </ul>\n\n      <p>Additional departures include Material Resources Director Alfonso Burciaga Esparza; Executive Secretariat Chief of Staff Juan Manuel Vázquez Barajas; and Pedro Pablo Chirinos Benítez, former head of the Technical Unit for Liaison with Local Public Electoral Bodies (OPLES) and coordinator in the Executive Directorate of Prerogatives and Political Parties. Further resignations were recorded in the Executive Directorate of Administration (covering vehicle fleet and risk management) and the Federal Register of Voters.</p>\n\n      <blockquote>\n        \"The review encompasses the General Executive Board and all top-tier positions, including functional relationships and procurement processes that must be audited in light of recent public findings.\"\n        <cite>— National Electoral Institute (INE) Collegial Statement</cite>\n      </blockquote>\n\n      <h3>FGR Criminal Complaint and 8.87-Billion-Peso ASF Audit</h3>\n      <p>On Wednesday, November 4, the INE's 10 sitting electoral councillors agreed to bring a formal complaint before the <strong>Attorney General's Office (FGR)</strong> to investigate potential criminal offenses tied to the irregular awarding of contracts to a network of vendor and shell companies (<em>factureras</em>). Earlier audits by the Federal Superior Auditor (ASF) detected irregularities and alleged shell-company schemes totaling up to <strong>8.87 billion pesos between 2014 and 2026</strong>.</p>\n\n      <p>Asked during her morning press conference about calls from business chambers and opposition lawmakers for immediate criminal prosecution against Taddei, President Claudia Sheinbaum clarified that the Executive Branch cannot intervene in prosecutorial demands, noting that the ASF is conducting an <em>ex officio</em> investigation and holds the legal authority to determine whether criminal referrals are warranted.</p>\n\n      <h3>Chamber of Deputies Postpones Call for New INE President</h3>\n      <p>Meanwhile, in the Chamber of Deputies, the Political Coordination Board (Jucopo) postponed by one week the formal call to elect a new president of the INE General Council after Morena rejected eight conditions put forward by the opposition National Action Party (PAN) to endorse the selection rules.</p>\n    ",
+    "relatedIds": [
+      "fox-admits-2006-election-intervention-sheinbaum-responds",
+      "mexican-senate-approves-anti-meme-digital-copyright-law",
+      "federal-salary-review-2027-budget-caps-pensions"
+    ]
   },
-
-  'alebrijes-oaxaca-copal': {
-    id: 'alebrijes-oaxaca-copal',
-    category: 'CULTURE & TRADITIONS',
-    categoryClass: 'culture',
-    tag: 'Folk Art & Heritage',
-    pillar: 'Culture',
-    title: 'Dreams in Copal Wood: The Master Artisans of San Martín Tilcajete',
-    subtitle: 'How fantastical animal spirits become living sculptures in the Central Valleys of Oaxaca.',
-    author: 'Guillermo Paz',
-    authorRole: 'Art & Heritage Special Contributor',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/article_market.jpg',
-    imageCaption: 'Intricately painted Zapotec dream creatures hand-carved from soft copal wood branches.',
-    lead: "Deep in the Oaxacan valley, master woodcarvers transform twisted copal branches into chimeras of jaguars with dragon wings, each decorated with thousands of micro-dots telling Zapotec calendar legends.",
-    body: `
-      <p class="drop-cap">In the quiet village of San Martín Tilcajete, south of Oaxaca City, the air smells of freshly carved copal wood and dried natural mineral pigments. Here, third-generation woodcarvers study the natural twists and curves of tree roots before making a single cut with their machetes.</p>
-
-      <p>“We don’t force the animal into the wood,” explains master artisan Jacobo Ángeles. “The shape of the branch tells us whether it wants to be an iguana, an owl, or an armadillo with eagle wings. Our job is simply to remove what doesn’t belong.”</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Every symbol painted on our alebrijes comes from Zapotec cosmology: the fretwork represents respect for ancestors, water flows represent renewal, and the spiral is time itself.”</p>
-      </blockquote>
-
-      <p>Today, sustainable reforestation programs run by the artisan guild ensure that for every copal tree harvested, ten saplings are planted in the surrounding hillsides, guaranteeing that this dazzling marriage of folklore and craftsmanship endures for centuries to come.</p>
-    `,
-    relatedIds: ['mexico-beyond-tourist-trail', 'mezcal-renaissance-oaxaca']
+  "mexican-senate-approves-anti-meme-digital-copyright-law": {
+    "id": "mexican-senate-approves-anti-meme-digital-copyright-law",
+    "title": "Mexican Senate Approves Controversial 'Anti-Meme' Digital Copyright Reform With Fines Up to 4.6 Million Pesos",
+    "subtitle": "Backed by a 72–37 ruling coalition majority, the reform to the Federal Copyright Law compels internet providers to remove unauthorized audio, video, and AI-modified memes or face steep penalties.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "6 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • CONGRESS & DIGITAL RIGHTS",
+    "image": "assets/images/politica_senado_ley_derechos_autor.jpg",
+    "imageCaption": "Plenary session of the Mexican Senate during the vote on reforms to the Federal Copyright Law.",
+    "lead": "In a heated plenary session, the Mexican Senate approved amendments to the Federal Copyright Law—dubbed the 'Anti-Meme Law' by opposition critics—establishing secondary liability for internet service providers, expedited takedowns of digital and AI-generated content, and fines of up to 4.6 million pesos.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — With <strong>72 votes in favor</strong> from senators of Morena, the Labor Party (PT), and the Green Ecological Party of Mexico (PVEM) against <strong>37 votes opposed</strong> from the National Action Party (PAN), the Institutional Revolutionary Party (PRI), and Movimiento Ciudadano (MC), the Senate of the Republic approved sweeping changes to Mexico's Federal Copyright Law (<em>Ley Federal del Derecho de Autor</em>).</p>\n\n      <h3>What the Reform Requires: AI Content, Memes, and Account Suspensions</h3>\n      <p>Under the newly approved amendments to <strong>Articles 114 Octies and 114 Nonies</strong>, internet service providers and digital platforms are required to expeditiously remove digital materials that use—without the copyright holder's authorization—voices, images, music, literary or artistic works, films, or any other audiovisual content. Crucially, the statutory language encompasses materials generated or modified using <strong>Artificial Intelligence (AI)</strong>, including memes and parodies that incorporate copyrighted works.</p>\n\n      <p>Key provisions of the reform include:</p>\n      <ul>\n        <li><strong>Secondary Liability for Providers (Art. 114 Nonies):</strong> Internet service providers can be held legally liable for copyright infringements committed by their users if they fail to comply with takedown obligations, induce or contribute to infringing conduct with knowledge of it, or obtain direct financial benefit while having the ability to control user actions.</li>\n        <li><strong>Termination of Repeat Infringers (Art. 114 Octies, Fracc. I):</strong> Platforms and internet providers must enforce policies to suspend or permanently terminate the accounts of repeat offenders.</li>\n        <li><strong>Financial Penalties:</strong> Companies that fail to comply with the new mandates face administrative fines of up to <strong>4.6 million pesos</strong>.</li>\n      </ul>\n\n      <blockquote>\n        \"Mexicans love to laugh—even at our own misfortunes—and no law is going to forbid us from using humor and political satire.\"\n        <cite>— Sen. Carolina Viggiano (PRI), during the Senate floor debate</cite>\n      </blockquote>\n\n      <h3>Opposition Warns of Censorship and Household Internet Cutoffs</h3>\n      <p>While ruling-coalition lawmakers defended the bill as a necessary modernization to combat digital piracy and align intellectual property protections with USMCA standards, opposition senators warned that the broad wording opens the door to political censorship and abusive takedowns against investigative journalists and government critics.</p>\n\n      <p>Senator <strong>Clemente Castañeda</strong> of Movimiento Ciudadano argued that under the guise of USMCA compliance, \"content removal mechanisms could be weaponized for unfair competition or to curtail freedom of expression.\" Meanwhile, PRI Senator <strong>Gabriel Elizondo</strong> warned that mandatory sanctions against repeat infringers could disconnect entire households that share a single residential internet connection used by children for school and parents for work.</p>\n    ",
+    "relatedIds": [
+      "ine-crisis-30-resignations-taddei-fgr-complaint",
+      "federal-salary-review-2027-budget-caps-pensions",
+      "rsf-press-freedom-report-mexico-cjng-2026"
+    ]
   },
-
-  // --- 3. LIVING IN MEXICO ---
-  'americans-moving-to-mexico': {
-    id: 'americans-moving-to-mexico',
-    category: 'LIVING IN MEXICO',
-    categoryClass: 'living',
-    tag: 'Expat Practical Guide',
-    pillar: 'People',
-    title: 'What Americans Should Know Before Moving to Mexico',
-    subtitle: 'Life, costs and practical advice for a smoother transition.',
-    author: 'Sarah Jenkins & Miguel Soto',
-    authorRole: 'Expat Affairs Correspondents',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_san_miguel.jpg',
-    imageCaption: 'The cobblestone streets and colonial architecture of San Miguel de Allende, Guanajuato.',
-    lead: "Life, costs and practical advice for a smoother transition. From immigration paperwork to health insurance and community integration, here is the realistic blueprint for building a life south of the border.",
-    body: `
-      <p class="drop-cap">The dream of trading frigid northern winters or skyrocketing coastal rents for colonial courtyards, year-round sunshine, and world-class cuisine continues to draw tens of thousands of Americans and Canadians to Mexico each year. Yet as expat veterans will tell you, a successful move requires much more than an appetite for street tacos.</p>
-
-      <h3>1. Navigating Visas: Tourist vs. Residente Temporal</h3>
-      <p>Gone are the days when foreigners could comfortably live year-round on rolling 180-day tourist cards (FMM). Mexico’s Instituto Nacional de Migración (INM) strictly enforces residency rules. If you intend to spend more than six months per year in the country, you must apply for <strong>Residencia Temporal</strong> or <strong>Residencia Permanente</strong> through a Mexican consulate in your home country before arriving.</p>
-      <p>Financial solvency requirements are tied to the Mexican minimum wage and UMA values. In 2026, applicants generally need to demonstrate roughly $3,200 to $4,500 USD in monthly passive income or investments exceeding $70,000 USD over the previous twelve months.</p>
-
-      <h3>2. Cost of Living Realities</h3>
-      <p>While Mexico remains remarkably affordable compared to major U.S. metropolitan hubs, prices have shifted substantially in expat magnets such as Mexico City’s Roma-Condesa corridors, San Miguel de Allende, and Puerto Vallarta. A comfortable lifestyle for a couple in a mid-sized colonial city ranges between $2,000 and $3,500 USD per month including rent, private medical coverage, dining, and utilities.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“The expats who thrive longest in Mexico are those who make an earnest effort to speak the language and invest in their local neighborhood ecosystem.”</p>
-      </blockquote>
-
-      <h3>3. Healthcare: World-Class at a Fraction of the Cost</h3>
-      <p>Healthcare is consistently ranked among the greatest advantages of living in Mexico. Private hospital networks such as ABC Hospital in CDMX, Ángeles, and Star Médica offer state-of-the-art diagnostic facilities and bilingual specialists at costs 60% to 75% lower than across the northern border. Most long-term residents purchase international expat major medical policies or utilize Mexico’s voluntary public IMSS scheme for routine coverage.</p>
-    `,
-    relatedIds: ['mexico-city-neighborhood-guide', 'resico-taxes-for-expats', 'fideicomiso-property-guide']
+  "fox-admits-2006-election-intervention-sheinbaum-responds": {
+    "id": "fox-admits-2006-election-intervention-sheinbaum-responds",
+    "title": "'I Made Calderón Win': Vicente Fox Admits Operating to Keep PAN in Power in 2006 as Sheinbaum Condemns Fraud",
+    "subtitle": "In a startling interview with a Spanish outlet, the former president says he would have refused to hand the presidential sash to López Obrador—prompting President Sheinbaum to denounce a historic violation of the popular will.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "5 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • DEMOCRACY & ELECTORAL HISTORY",
+    "image": "assets/images/politica_fox_calderon_2006.jpg",
+    "imageCaption": "Former President Vicente Fox Quesada, whose remarks to a Spanish digital newspaper reignited debate over the disputed 2006 presidential election.",
+    "lead": "Two decades after Mexico's razor-thin and bitterly contested 2006 presidential election, former President Vicente Fox Quesada ignited a political firestorm by declaring in an interview with a Spanish news outlet that he personally ensured Felipe Calderón's victory to keep the presidency in the hands of the National Action Party (PAN).",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — Former Mexican President Vicente Fox Quesada (2000–2006) triggered immediate condemnation across Mexico's political spectrum after confessing in an interview with the Spanish digital newspaper <em>The Objective</em> that he intervened as head of state to secure the victory of his successor, Felipe Calderón Hinojosa, over then-PRD candidate Andrés Manuel López Obrador in the 2006 presidential election.</p>\n\n      <blockquote>\n        \"I made Calderón win—even though it is not very democratic to say that—because I told myself that the succession in the country had to remain in the same hands of my political party.\"\n        <cite>— Former President Vicente Fox Quesada, in an interview with The Objective</cite>\n      </blockquote>\n\n      <h3>'A Businessman's Mentality' and Refusal to Hand Over the Sash</h3>\n      <p>Going even further, Fox stated in the interview that had López Obrador been declared the winner in 2006, he would have refused to attend the inauguration to hand over the presidential sash—justifying his stance through what he described as a corporate succession mindset.</p>\n\n      <p>\"I would not have gone out of the sheer anger it would have given me—being a democrat, yes, but also having a businessman's mentality,\" Fox said. \"A businessman who operates a successful enterprise must keep in mind whose hands he is leaving that company in. So I told myself: start working, you have to win so the PAN stays in power and you can hand over the reins of the country.\"</p>\n\n      <h3>Sheinbaum: 'It Is Terrible, Yet It Proves Us Right'</h3>\n      <p>Responding during her morning press conference at the National Palace, President <strong>Claudia Sheinbaum Pardo</strong> described Fox's confession as \"something terrible\" for Mexican democracy, while emphasizing that it openly validates two decades of denunciations regarding state intervention in the 2006 vote, which was decided by an official margin of just 0.56% (and 1.04% in preliminary tallies).</p>\n\n      <p>Sheinbaum accused Fox of acting as the architect of an electoral fraud that \"violated the popular will,\" and faulted both the former Federal Electoral Institute (IFE) and the Electoral Tribunal for allowing a recount of only 8 percent of polling stations.</p>\n\n      <p>\"That IFE and that Tribunal knew that López Obrador had won the election—which is precisely why they refused to open all the ballot boxes,\" Sheinbaum declared, calling on citizens to defend popular sovereignty.</p>\n\n      <p>Following the president's criticism, Fox declined to offer any self-criticism, instead urging the administration not to dwell on 2006 and reviving his signature campaign slogan: \"What counts, what matters, is today, today, today—the past cannot permanently be the answer to the nation's current problems.\"</p>\n    ",
+    "relatedIds": [
+      "ine-crisis-30-resignations-taddei-fgr-complaint",
+      "sheinbaum-mexican-american-wins-plan-michoacan-2026",
+      "federal-salary-review-2027-budget-caps-pensions"
+    ]
   },
-
-  'mexico-city-neighborhood-guide': {
-    id: 'mexico-city-neighborhood-guide',
-    category: 'LIVING IN MEXICO',
-    categoryClass: 'living',
-    tag: 'Urban Living',
-    pillar: 'Places',
-    title: 'Beyond Roma & Condesa: The CDMX Neighborhoods Expats Are Choosing in 2026',
-    subtitle: 'From leafy San Rafael to tranquil Coyoacán and creative Santa María la Ribera.',
-    author: 'Clara Del Bosque',
-    authorRole: 'Urban Trends Reporter',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/article_san_miguel.jpg',
-    imageCaption: 'A sunlit colonial avenue in the historic and bohemian quarters of Mexico City.',
-    lead: "As rents in Roma Norte and Condesa reach parity with southern European capitals, international residents are discovering the architectural gems, independent cafes, and authentic neighborhood life of historic colonias.",
-    body: `
-      <p class="drop-cap">Five years ago, any expat moving to Mexico City would head straight for Roma Norte, Condesa, or Polanco. But in 2026, the creative and residential center of gravity is branching outward into colonias with distinct identities and rich architectural pedigrees.</p>
-
-      <h3>San Rafael & Santa María la Ribera: Porfirian Grandeur</h3>
-      <p>Directly west of the historic center, San Rafael and Santa María la Ribera showcase towering French-inspired townhomes built during the Porfiriato era. Anchored by the iconic Moorish Kiosk (Kiosco Morisco) and a vibrant community of contemporary art galleries, independent theaters, and family-owned pulquerías, these colonias offer walkable streets at half the rental costs of Roma.</p>
-
-      <h3>San Pedro de los Pinos & Escandón</h3>
-      <p>For young families and remote professionals seeking quiet tree-lined streets, local municipal markets, and neighborhood bakeries without the weekend nightlife crowds, Escandón and San Pedro de los Pinos have emerged as top residential contenders.</p>
-    `,
-    relatedIds: ['americans-moving-to-mexico', 'resico-taxes-for-expats']
+  "federal-salary-review-2027-budget-caps-pensions": {
+    "id": "federal-salary-review-2027-budget-caps-pensions",
+    "title": "2027 Budget Review Reveals Federal Officials Earning More Than Sheinbaum as Constitutional Pension Caps Take Effect",
+    "subtitle": "A Chamber of Deputies public finance study shows IMSS Director Zoé Robledo and specialized diplomatic, security, and military personnel surpassing the president's salary, while capping public pensions at 67,120 pesos a month.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "6 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • PUBLIC FINANCE & CONGRESS",
+    "image": "assets/images/politica_salarios_federales.png",
+    "imageCaption": "IMSS Director General Zoé Robledo and President Claudia Sheinbaum; a legislative budget analysis reviewed public-sector pay scales for 2027.",
+    "lead": "As the Chamber of Deputies prepares to debate and vote on the 2027 Federal Expenditure Budget (PEF), a technical audit by the Center for Public Finance Studies (CEFP) has revealed that specific federal posts—including the leadership of the Mexican Social Security Institute (IMSS) and specialized ranks in diplomacy, security, education, and the armed forces—carry compensation exceeding President Claudia Sheinbaum's salary.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — An official analysis of the <strong>2027 Federal Expenditure Budget Draft</strong> delivered to lawmakers by the Chamber of Deputies' Budget and Public Account Committee has placed federal compensation scales and the newly enacted constitutional pension caps under the legislative spotlight.</p>\n\n      <h3>How Top Federal Compensation Compares to the Presidency</h3>\n      <p>According to Annex 23.1.3 of the 2027 Budget Draft analyzed by the Center for Public Finance Studies (CEFP), the President of the Republic is assigned a gross annual remuneration of <strong>2,881,014 pesos</strong>, equivalent to a net monthly salary of <strong>134,290 pesos</strong>.</p>\n\n      <p>However, when reviewing directly controlled state entities under Annex 23, the CEFP identified that the position of Director General of the Mexican Social Security Institute (IMSS), held by <strong>Zoé Robledo</strong>, registers a gross annual remuneration of <strong>2,914,768 pesos</strong>—or 33,754 pesos more per year than the head of the Federal Executive.</p>\n\n      <p>Furthermore, the 2026–2027 Federal Public Administration Pay Scales show that specialized personnel across four key sectors receive net monthly compensation higher than the president's base salary:</p>\n      <ul>\n        <li><strong>Armed Forces (Fuerzas Armadas):</strong> up to <strong>29.2%</strong> higher net monthly pay in specialized technical ranks;</li>\n        <li><strong>Education &amp; Research Sector:</strong> up to <strong>23.9%</strong> higher;</li>\n        <li><strong>Public Security:</strong> up to <strong>15.4%</strong> higher;</li>\n        <li><strong>Mexican Foreign Service (Servicio Exterior Mexicano):</strong> up to <strong>0.8%</strong> higher.</li>\n      </ul>\n\n      <blockquote>\n        \"Although the remuneration of personnel in these specialized categories exceeds that of the President, the differences remain below half of the Executive's pay, thereby complying with the constitutional mandate that specialized exceptions may not exceed 150% of the President's compensation.\"\n        <cite>— Center for Public Finance Studies (CEFP), Chamber of Deputies</cite>\n      </blockquote>\n\n      <h3>Constitutional Pension Cap Fixed at 67,120 Pesos Monthly</h3>\n      <p>Crucially, the legislative report details the direct fiscal impact of this year's constitutional reform to <strong>Article 127 of the Mexican Constitution</strong>, which limits public-sector retirement pensions to no more than 50 percent of the remuneration of the President of the Republic. Based on Sheinbaum's net monthly salary of 134,290 pesos, the maximum constitutional ceiling for public pensions and retirements is now set at <strong>67,120 pesos per month</strong>.</p>\n\n      <p>Overall, the 2027 Expenditure Budget projects total federal spending on personal services (Chapter 1000) at <strong>1.444 trillion pesos</strong>—a 6.4% real increase (87.5 billion pesos more) compared to 2026, with expanded payroll allocations concentrated in National Defense, Public Education, the INE, and the IMSS.</p>\n    ",
+    "relatedIds": [
+      "ine-crisis-30-resignations-taddei-fgr-complaint",
+      "mexican-senate-approves-anti-meme-digital-copyright-law",
+      "sheinbaum-mexican-american-wins-plan-michoacan-2026"
+    ]
   },
-
-  // --- 4. TRAVEL ---
-  'gran-acuario-mazatlan-best-tourism-product': {
-    id: 'gran-acuario-mazatlan-best-tourism-product',
-    category: 'TRAVEL',
-    categoryClass: 'travel',
-    tag: 'National Tourism Award • Mazatlán',
-    pillar: 'Places',
-    title: 'Gran Acuario Mazatlán Wins Award for Best Tourism Product',
-    subtitle: 'The venue dedicated to the marine life of the Sea of Cortez was recognized at the El Ángel del Turismo National Awards, held in Puebla.',
-    author: 'Mex-Ahoy! Editorial Desk',
-    authorRole: 'Tourism & Coastal Destinations',
-    date: 'November 3, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/acuario_mazatlan_oceanico.jpg',
-    imageCaption: 'One of the monumental viewing windows at Gran Acuario Mazatlán, bringing visitors face to face with the marine biodiversity of the Sea of Cortez.',
-    lead: "The Gran Acuario Mazatlán has become one of the attractions expanding the port’s tourism offerings. Its approach to bringing visitors closer to the biodiversity of the Sea of Cortez and the opportunity to interact with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.",
-    body: `
-      <p class="drop-cap">The Gran Acuario Mazatlán has become one of the attractions that expand the port’s tourism offerings. Its proposal to bring visitors closer to the biodiversity of the Sea of Cortez and the possibility of interacting with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.</p>
-
-      <p>Located facing the coastal landscape of Mazatlán, the venue offers a journey through the ecosystems that give life to the so-called “Aquarium of the World.” Its architecture, designed by the firm of Mexican architect Tatiana Bilbao, establishes a dialogue with the surroundings right from the exterior. Upon entering, visitors discover distinct habitats that lead from intertidal and coastal zones all the way to the open ocean.</p>
-
-      <div class="article-photo-grid">
-        <figure class="article-figure-inline">
-          <img src="assets/images/acuario_mazatlan_arrecife.jpg" alt="Cylindrical coral reef exhibit at Gran Acuario Mazatlán">
-          <figcaption>A towering cylindrical coral reef habitat showcasing the vibrant marine ecosystems of the Sea of Cortez.</figcaption>
-        </figure>
-        <figure class="article-figure-inline">
-          <img src="assets/images/acuario_mazatlan_medusas.jpg" alt="Visitors observing the illuminated jellyfish exhibit at Gran Acuario Mazatlán">
-          <figcaption>Visitors admire the glowing jellyfish habitat during their journey through the aquarium’s marine galleries.</figcaption>
-        </figure>
-      </div>
-
-      <p>One of the most striking moments takes place in front of its large viewing windows, which allow visitors to observe different aquatic species up close and learn about aspects of their behavior. Among its inhabitants are Humboldt penguins, sharks, and rays. It is also home to capybaras, birds, and deer. Throughout the tour, the exhibitions bring the public closer to the importance of these species and their conservation.</p>
-
-      <div class="article-award-split">
-        <figure class="article-award-figure">
-          <img src="assets/images/acuario_mazatlan_premio.jpg" alt="Mireya Sosa Osuna and Rafael Lizárraga Favela with the El Ángel del Turismo award">
-          <figcaption>Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, Director of Gran Acuario Mazatlán, with the El Ángel del Turismo 2026 trophy and Best Tourism Product diploma.</figcaption>
-        </figure>
-        <div>
-          <p>The award was received by businessman Ernesto Coppel Kelly, accompanied by Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, director of the venue, during the ceremony that brought together representatives from different sectors of the country’s tourism industry.</p>
-          <p style="margin-bottom:0;">For Mazatlán, this recognition gives national projection to one of its most representative attractions. The Gran Acuario is part of a tourism offering that also includes the Historic Center and its cultural spaces, the <em>malecón</em> boardwalk, gastronomy, and sunsets facing the Pacific—elements that distinguish the port as one of the most renowned beach destinations in Mexico.</p>
-        </div>
-      </div>
-    `,
-    relatedIds: ['hidden-gems-caribbean-coast', 'copper-canyon-chepe-train', 'mexico-beyond-tourist-trail']
+  "rsf-press-freedom-report-mexico-cjng-2026": {
+    "id": "rsf-press-freedom-report-mexico-cjng-2026",
+    "title": "Reporters Without Borders Adds CJNG to Global 'Press Freedom Predators' List Amid Warnings Over Violence Against Local Journalists",
+    "subtitle": "Following attacks against eight reporters after the February 2026 Tapalpa operation in which 'El Mencho' died, RSF warns that organized crime and local corruption have claimed 169 journalists' lives in Mexico since 2006.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Editor-in-Chief & Senior Political Analyst",
+    "date": "November 4, 2026",
+    "readTime": "6 min read",
+    "category": "POLITICS",
+    "categoryClass": "red",
+    "tag": "POLITICS • SECURITY & PRESS FREEDOM",
+    "image": "assets/images/politica_libertad_prensa_mexico.jpg",
+    "imageCaption": "Journalists and photographers during a press freedom vigil in Mexico; RSF released its updated global report on threats to local reporters.",
+    "lead": "International press freedom watchdog Reporters Without Borders (RSF) has included the Jalisco New Generation Cartel (CJNG) on its updated global list of 'Predators of Press Freedom,' warning that organized crime networks and local political corruption continue to enforce zones of silence across regional journalism in Mexico.",
+    "body": "\n      <p><span class=\"dropcap\">M</span>EXICO CITY — In its latest global assessment of threats to news gatherers, <strong>Reporters Without Borders (RSF)</strong> formally placed the Jalisco New Generation Cartel (CJNG) among the world's most dangerous non-state \"Predators of Press Freedom,\" citing a systematic campaign of intimidation, abductions, and violence aimed at controlling public information in several Mexican states.</p>\n\n      <h3>Fallout After the February 2026 Tapalpa Operation</h3>\n      <p>According to RSF's documentation, the designation was reinforced following events on <strong>February 22, 2026</strong>, when eight journalists were assaulted, threatened, or stripped of their work equipment while covering the aftermath of the federal security operation in Tapalpa, Jalisco, in which CJNG founder Nemesio Oseguera Cervantes, alias <em>\"El Mencho,\"</em> died—an event that triggered a wave of retaliatory blockades and violence.</p>\n\n      <p>Concurrently, on Wednesday, November 4, federal authorities reported that Antonio Oseguera Cervantes, alias <em>\"Tony Montana\"</em>—brother of the late cartel leader—accepted a 20-year prison sentence in the United States, while the Mexican Navy (Semar) announced two weeks of coordinated strikes against leadership and logistics networks of the CJNG, Los Salazar, and the Guasave cartel across Jalisco, Colima, Sonora, Sinaloa, and Oaxaca.</p>\n\n      <blockquote>\n        \"The cartel's most lethal weapon against regional journalism is imposing the law of silence through constant intimidation, turning control over local news coverage into a strategic instrument.\"\n        <cite>— Reporters Without Borders (RSF) 2026 Assessment</cite>\n      </blockquote>\n\n      <h3>Two Decades of Risk for Local Reporters Covering Politics and Security</h3>\n      <p>RSF's report underscores the acute vulnerability of local reporters working outside Mexico's major metropolitan capitals:</p>\n      <ul>\n        <li><strong>169 Journalists Killed Since 2006:</strong> According to RSF records, 169 journalists have been murdered in Mexico over the past two decades, of whom <strong>98 percent were local reporters</strong>.</li>\n        <li><strong>Beat Exposure:</strong> At least 100 of the slain journalists covered crime and police beats, while approximately <strong>78 also reported on local political affairs and municipal corruption</strong>.</li>\n        <li><strong>24 Disappearances:</strong> Between 2006 and 2026, 24 journalists remain officially registered as disappeared in Mexico, and at least 34 slain reporters suffered documented acts of violence or threats prior to their deaths.</li>\n      </ul>\n\n      <p>Press freedom organizations reiterated calls on federal and state authorities to strengthen the Federal Protection Mechanism for Human Rights Defenders and Journalists and dismantle the collusion between municipal officials and criminal groups that leaves regional correspondents unprotected.</p>\n    ",
+    "relatedIds": [
+      "mexican-senate-approves-anti-meme-digital-copyright-law",
+      "sheinbaum-mexican-american-wins-plan-michoacan-2026",
+      "us-ambassador-johnson-public-figure"
+    ]
   },
-
-  'hidden-gems-caribbean-coast': {
-    id: 'hidden-gems-caribbean-coast',
-    category: 'TRAVEL',
-    categoryClass: 'travel',
-    tag: 'Coastal Exploration',
-    pillar: 'Places',
-    title: "Hidden Gems Along Mexico's Caribbean Coast",
-    subtitle: 'Beautiful places beyond the crowds.',
-    author: 'David R. Vance',
-    authorRole: 'Travel & Marine Adventure Editor',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/article_caribbean.jpg',
-    imageCaption: 'The ancient Mayan fortress perched on sea cliffs above the pristine Caribbean waters.',
-    lead: "Beautiful places beyond the crowds. Escape the neon corridors and all-inclusive super-resorts to find untouched biosphere reserves, crystal-clear freshwater lagoons, and sleepy fishing villages along Quintana Roo.",
-    body: `
-      <p class="drop-cap">Few coastlines in the world can match the hypnotic turquoise palette of the Mexican Caribbean. Yet for many international visitors, the experience is confined to high-rise hotel strips and crowded beach clubs thumping with bass.</p>
-
-      <p>Travelers who venture just an hour or two off the beaten highway will discover a vastly different coastline: pristine mangrove estuaries where manatees graze peacefully, secret freshwater cenotes filtered through limestone caverns, and fishing communities where life still moves according to the tides.</p>
-
-      <h3>1. Bacalar: The Lagoon of Seven Colors</h3>
-      <p>Located near the border with Belize, Bacalar is one of Mexico’s most astonishing natural wonders. Fed by underground river systems rather than ocean water, this 42-kilometer-long lake shifts from milky jade to electric cerulean depending on water depth and cloud cover. It is also home to living stromatolites—some of the planet's oldest microbial organisms, dating back over 3.5 billion years.</p>
-
-      <h3>2. Sian Ka'an Biosphere Reserve</h3>
-      <p>Covering over 1.3 million acres of tropical wetlands, coral reefs, and coastal lagoons, Sian Ka'an (Mayan for "Origin of the Sky") is a UNESCO World Heritage site that offers eco-guided boat treks through ancient canals dug by Mayan traders over a thousand years ago.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Gliding silently in a wooden panga through Sian Ka’an, with osprey circling overhead and sea turtles surfacing alongside, is the Caribbean as nature intended.”</p>
-      </blockquote>
-
-      <h3>3. Puerto Morelos: The Timeless Fishing Haven</h3>
-      <p>Nestled midway between Cancún and Playa del Carmen, Puerto Morelos has tenaciously preserved its charming seaside village identity. With its iconic tilted lighthouse, vibrant municipal square, and a National Marine Park protecting a world-class barrier reef just 500 meters offshore, it remains the ultimate refuge for travelers seeking tranquility.</p>
-    `,
-    relatedIds: ['gran-acuario-mazatlan-best-tourism-product', 'copper-canyon-chepe-train', 'mexico-beyond-tourist-trail']
+  "what-comes-after-claudia": {
+    "id": "what-comes-after-claudia",
+    "category": "POLITICS",
+    "categoryClass": "politics",
+    "tag": "National Politics",
+    "pillar": "The Real Mexico",
+    "title": "What Comes After Claudia?",
+    "subtitle": "As the first woman president reshapes Mexico, attention turns to what happens next.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Senior Political Analyst & Editor-in-Chief",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "6 min read",
+    "image": "assets/images/hero_palacio.jpg",
+    "imageCaption": "The National Palace overlooking Mexico City’s Zócalo with the monumental national flag.",
+    "lead": "With Claudia Sheinbaum's presidency entering a decisive phase, speculation is growing about who could follow, what challenges they will face, and how Mexico's political landscape might evolve in the coming years.",
+    "body": "\n      <p class=\"drop-cap\">With Claudia Sheinbaum’s presidency entering a decisive phase, political observers across the hemisphere are asking a question that once seemed premature: what does Mexican politics look like after the historic tenure of its first female head of state?</p>\n      \n      <p>Sheinbaum stepped into the National Palace carrying the monumental legacy of the Fourth Transformation (4T) initiated by Andrés Manuel López Obrador. Yet over the past two years, her administration has carved its own unmistakable cadence—one defined by technical rigor, targeted infrastructure investment, aggressive renewable energy quotas, and an unflinching diplomatic stance during trade negotiations with Washington.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“The challenge for the next generation of Mexican leadership is not merely continuing social programs, but creating a resilient institutional framework that can withstand global economic volatility.”</p>\n        <cite>— Dra. Elena Morales, Institute of Political Studies, UNAM</cite>\n      </blockquote>\n\n      <h3>The Coalition Under Stress and Evolution</h3>\n      <p>Inside the ruling Morena coalition, the quiet competition for ideological continuity is already palpable. Governors from the industrialized north, eager to leverage nearshoring capital, advocate for pragmatic regulatory deregulation, while southern stalwarts insist on doubling down on state-directed strategic sectors including railways and petrochemicals.</p>\n\n      <p>Meanwhile, the traditional opposition parties—PAN, PRI, and Movimiento Ciudadano—find themselves at a critical crossroads. Having struggled to present a unified alternative during previous federal ballots, new regional leaders in Jalisco, Nuevo León, and Querétaro are pitching a modernized center-left and center-right coalition aimed squarely at Mexico’s burgeoning urban middle class.</p>\n\n      <h3>Nearshoring, Energy, and the 2026 USMCA Review</h3>\n      <p>Beyond internal party dynamics looms the broader economic horizon. The ongoing review of the United States–Mexico–Canada Agreement (USMCA) has placed bilateral supply chains under intense scrutiny. Mexico’s manufacturing heartland continues to absorb record foreign direct investment, but bottlenecks in clean electrical grid transmission and industrial water management remain pivotal test cases.</p>\n\n      <p>Whoever prepares to step forward into the presidential arena will inherit a nation whose geopolitical weight in North America has never been higher, but whose domestic expectations for security, judicial transparency, and shared prosperity have never been more demanding.</p>\n    ",
+    "relatedIds": [
+      "us-ambassador-johnson-public-figure",
+      "judicial-reform-mexico",
+      "editor-worth-understanding",
+      "nearshoring-opportunity-or-bubble"
+    ]
   },
-
-  'copper-canyon-chepe-train': {
-    id: 'copper-canyon-chepe-train',
-    category: 'TRAVEL',
-    categoryClass: 'travel',
-    tag: 'Mountain Expeditions',
-    pillar: 'Places',
-    title: 'Riding the Chepe Express: Traversing the Depths of the Sierra Tarahumara',
-    subtitle: 'Inside Mexico’s most breathtaking passenger train route through four times the volume of the Grand Canyon.',
-    author: 'Fernando Valenzuela',
-    authorRole: 'Railways & Adventure Specialist',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_caribbean.jpg',
-    imageCaption: 'The dramatic serpentine railway clinging to canyon cliffs in Chihuahua and Sinaloa.',
-    lead: "Climbing from sea-level coastal plains in Sinaloa up into pine-scented alpine heights of 2,400 meters, El Chepe offers one of the world's last great railway odysseys.",
-    body: `
-      <p class="drop-cap">Spanning 653 kilometers, 86 tunnels, and 37 bridges suspended over abyss-like gorges, the Ferrocarril Chihuahua al Pacífico—affectionately known as El Chepe—is an engineering triumph that took nearly a century to complete.</p>
-
-      <p>Leaving the coastal town of Los Mochis at dawn, the Chepe Express slowly ascends alongside rushing rivers before plunging into the heart of the Copper Canyon (Barrancas del Cobre), a network of six distinct ravines that dwarfs Arizona’s Grand Canyon in both depth and total land area.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“When the train rounds the curve at Divisadero, the entire dining car falls silent. The canyon opens beneath you like a geological cathedral painted in copper, ochre, and deep evergreen.”</p>
-      </blockquote>
-
-      <h3>Meeting the Rarámuri Runners</h3>
-      <p>The high plateau is the ancestral home of the Rarámuri (Tarahumara) people, legendary endurance runners whose footwear—simple sandals carved from tire tread called <em>huaraches</em>—has carried them across hundreds of rugged mountain kilometers for generations. Stopping in Creel and Cerocahui allows travelers to support community-led cooperative lodges and trek ancient forest trails.</p>
-    `,
-    relatedIds: ['gran-acuario-mazatlan-best-tourism-product', 'hidden-gems-caribbean-coast', 'mexico-beyond-tourist-trail']
+  "judicial-reform-mexico": {
+    "id": "judicial-reform-mexico",
+    "category": "POLITICS",
+    "categoryClass": "politics",
+    "tag": "Legal Affairs",
+    "pillar": "The Real Mexico",
+    "title": "Judicial Reform in Motion: What the Changes Mean for Daily Life & Commerce",
+    "subtitle": "An objective breakdown of how the popular election of judges is reshaping Mexican jurisprudence.",
+    "author": "Mariana Galindo",
+    "authorRole": "Constitutional Law Correspondent",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/hero_palacio.jpg",
+    "imageCaption": "The Supreme Court of Justice of the Nation (SCJN) in historic downtown Mexico City.",
+    "lead": "As the first cohorts of publicly elected magistrates assume office, international investors and ordinary citizens alike are closely observing how legal certainty, commercial arbitration, and civil litigation operate under the new paradigm.",
+    "body": "\n      <p class=\"drop-cap\">Few legislative shifts in modern Mexican history have ignited as much fervent debate as the 2024 constitutional judicial reform. Now, two years into its phased implementation, the theoretical arguments have given way to practical realities in courtrooms across the 32 states.</p>\n\n      <p>Proponents of the reform argued that the judicial branch had long suffered from insular corporatism and nepotism, demanding direct democratic accountability. Critics, conversely, warned of potential politicization and the erosion of technical judicial expertise. The reality on the ground in late 2026 reveals a nuanced picture.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“International arbitration clauses and bilateral investment treaties have maintained commercial continuity, while local tribunals are seeing unprecedented public scrutiny.”</p>\n        <cite>— Lic. Roberto Garza, Mexican Bar Association</cite>\n      </blockquote>\n\n      <h3>Impact on International Contracts and Nearshoring</h3>\n      <p>Foreign enterprises operating in Querétaro, Nuevo León, and Baja California have largely adapted by standardizing international arbitration mechanisms under ICC and ICSID rules. Meanwhile, the Federal Judicial Council’s newly established disciplinary tribunal has introduced strict performance metrics for district judges handling commercial disputes.</p>\n    ",
+    "relatedIds": [
+      "what-comes-after-claudia",
+      "nearshoring-opportunity-or-bubble"
+    ]
   },
-
-  // --- 5. FOOD & DRINK ---
-  'mezcal-renaissance-oaxaca': {
-    id: 'mezcal-renaissance-oaxaca',
-    category: 'FOOD & DRINK',
-    categoryClass: 'food',
-    tag: 'Agave Heritage',
-    pillar: 'Culture',
-    title: 'The Sacred Smoke: Inside Oaxaca’s Artisanal Mezcal Renaissance',
-    subtitle: 'How traditional palenqueros are protecting wild agaves against industrial homogenization.',
-    author: 'Mateo Cárdenas',
-    authorRole: 'Spirits & Gastronomy Editor',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_market.jpg',
-    imageCaption: 'Underground conical stone pit where agave hearts roast over sweet holm oak and volcanic rock.',
-    lead: "As global demand for mezcal skyrockets from London to Tokyo, small-scale producers in Oaxaca’s Sierra Sur are fighting to preserve ancestral underground roasting, horse-drawn stone tahonas, and wild varietal biodiversity.",
-    body: `
-      <p class="drop-cap">To stand in a traditional <em>palenque</em> at dawn is to witness an alchemical process unchanged since the 16th century. Smoke curls lazily from an earthen conical pit where tons of ripe <em>espadín</em> and wild <em>tobalá</em> agave hearts have roasted for days over red-hot volcanic river stones covered with river cane and soil.</p>
-
-      <p>“Industrial tequila chose speed and stainless steel autoclaves,” says Maestro Mezcalero Don Fortunato in Matatlán. “Mezcal chose time, wood, stone, and the wild airborne yeasts of the mountain. You cannot rush what nature took fifteen years to grow.”</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“When you sip mezcal, you are not tasting alcohol; you are drinking years of Oaxacan sunlight, rain, and soil captured inside an agave heart.”</p>
-      </blockquote>
-
-      <h3>The Battle for Wild Varietals: Tobalá, Tepeztate & Arroqueño</h3>
-      <p>While cultivated <em>espadín</em> matures in seven to eight years, wild varieties such as <em>tepeztate</em>—which clings to sheer limestone cliff faces—require up to 25 to 30 years before blooming. Forward-thinking cooperatives have enacted strict village quotas and communal nursery reforestation to ensure these botanical treasures survive global commercialization.</p>
-    `,
-    relatedIds: ['seven-moles-of-oaxaca', 'mexico-beyond-tourist-trail']
+  "mexico-beyond-tourist-trail": {
+    "id": "mexico-beyond-tourist-trail",
+    "category": "CULTURE & TRADITIONS",
+    "categoryClass": "culture",
+    "tag": "Cultural Dispatch",
+    "pillar": "Culture",
+    "title": "The Mexico Beyond the Tourist Trail",
+    "subtitle": "From vibrant markets to living traditions, discover the real Mexico.",
+    "author": "Xóchitl Cruz",
+    "authorRole": "Culture & Ethnography Writer",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/article_market.jpg",
+    "imageCaption": "A traditional municipal tianguis alive with native produce, herbs, and ancestral market customs.",
+    "lead": "From vibrant markets to living traditions, discover the real Mexico. Step away from packaged tour buses and into the beating heart of local tianguis, artisan guildhalls, and communal celebrations.",
+    "body": "\n      <p class=\"drop-cap\">To understand Mexico, one must start not in a museum or five-star resort lobby, but in a bustling morning <em>tianguis</em>. The word itself comes from the Nahuatl <em>tiyanquiztli</em>, referring to the open-air market traditions that have connected rural harvesters with town dwellers for well over a millennium.</p>\n\n      <p>Under towering sheets of pink, yellow, and orange tarps, sensory overload is an understatement. The citrus aroma of freshly squeezed key limes blends with the pungent sweetness of copal incense, the earthy scent of heirloom blue corn tortillas puffing on a clay comal, and the rhythmic shouts of fruit vendors calling out <em>¡Pásele, güerita, marchante, aquí hay calidad!</em></p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Our markets are not tourist exhibits; they are our living community ledger, where relationships are forged across generations through fresh food and respect.”</p>\n        <cite>— Doña Rosalía Morales, Tlacolula de Matamoros Market, Oaxaca</cite>\n      </blockquote>\n\n      <h3>Preserving Ancestral Crafts</h3>\n      <p>In communities like Santa Clara del Cobre in Michoacán, master metalsmiths still hand-hammer massive copper cauldrons with synchronized blows that echo through cobbled alleyways. In the highlands of Chiapas, Tzotzil and Tzeltal master weavers use the ancestral backstrap loom to tell cosmological stories woven into every geometric diamond pattern of a cotton huipil.</p>\n\n      <p>Engaging with the real Mexico means stepping into these spaces with humility, asking questions, buying directly from families who have preserved these traditions for centuries, and appreciating the immense cultural tapestry that makes this country an irreplaceable global treasure.</p>\n    ",
+    "relatedIds": [
+      "alebrijes-oaxaca-copal",
+      "seven-moles-of-oaxaca",
+      "americans-moving-to-mexico"
+    ]
   },
-
-  'seven-moles-of-oaxaca': {
-    id: 'seven-moles-of-oaxaca',
-    category: 'FOOD & DRINK',
-    categoryClass: 'food',
-    tag: 'Culinary Traditions',
-    pillar: 'Culture',
-    title: 'Beyond the Taco: Decoding the Seven Legendary Moles of Southern Mexico',
-    subtitle: 'From pitch-black Mole Negro to tart Verde and delicate Amarillo—the pinnacle of Mexican haute cuisine.',
-    author: 'Chef Beatriz Solano',
-    authorRole: 'Culinary Historian',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/article_market.jpg',
-    imageCaption: 'A clay cazuela simmering fragrant mole negro perfumed with charred chilhuacle chilies and cacao.',
-    lead: "Mole is not a sauce; it is a sacred Mexican symphonic preparation that can require over thirty ingredients, two days of patient labor, and centuries of Zapotec, Mixtec, and Spanish culinary confluence.",
-    body: `
-      <p class="drop-cap">If French culinary philosophy is built on stocks and butter reductions, Mexican classical gastronomy reaches its sublime zenith in the complex architecture of <em>mole</em>. Oaxaca, deservedly celebrated as the Land of the Seven Moles, treats these recipes with the reverence of family heirlooms.</p>
-
-      <h3>1. Mole Negro (The King of Moles)</h3>
-      <p>Distinguished by the rare chilhuacle negro chili, roasted seeds, plantains, almonds, sesame, and dark Mexican stone-ground cacao. Its flavor is a masterclass in balance: smoky, deeply savory, subtly sweet, and mysteriously bitter.</p>
-
-      <h3>2. Mole Coloradito & Manchamanteles</h3>
-      <p>Brick-red and velvety, Coloradito relies on ancho and guajillo chilies with sweet hints of cinnamon and ripe tomatoes. Manchamanteles ("tablecloth stainer") pairs chili richness with pineapple and sweet plantains.</p>
-
-      <h3>3. Mole Verde & Amarillo</h3>
-      <p>Verde celebrates fresh herbs—principally sacred <em>hoja santa</em>, epazote, and green pumpkin seeds. Amarillo delivers a vibrant aromatic punch spiced with ground cloves, cumin, and Mexican allspice.</p>
-    `,
-    relatedIds: ['mezcal-renaissance-oaxaca', 'mexico-beyond-tourist-trail']
+  "alebrijes-oaxaca-copal": {
+    "id": "alebrijes-oaxaca-copal",
+    "category": "CULTURE & TRADITIONS",
+    "categoryClass": "culture",
+    "tag": "Folk Art & Heritage",
+    "pillar": "Culture",
+    "title": "Dreams in Copal Wood: The Master Artisans of San Martín Tilcajete",
+    "subtitle": "How fantastical animal spirits become living sculptures in the Central Valleys of Oaxaca.",
+    "author": "Guillermo Paz",
+    "authorRole": "Art & Heritage Special Contributor",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/article_market.jpg",
+    "imageCaption": "Intricately painted Zapotec dream creatures hand-carved from soft copal wood branches.",
+    "lead": "Deep in the Oaxacan valley, master woodcarvers transform twisted copal branches into chimeras of jaguars with dragon wings, each decorated with thousands of micro-dots telling Zapotec calendar legends.",
+    "body": "\n      <p class=\"drop-cap\">In the quiet village of San Martín Tilcajete, south of Oaxaca City, the air smells of freshly carved copal wood and dried natural mineral pigments. Here, third-generation woodcarvers study the natural twists and curves of tree roots before making a single cut with their machetes.</p>\n\n      <p>“We don’t force the animal into the wood,” explains master artisan Jacobo Ángeles. “The shape of the branch tells us whether it wants to be an iguana, an owl, or an armadillo with eagle wings. Our job is simply to remove what doesn’t belong.”</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Every symbol painted on our alebrijes comes from Zapotec cosmology: the fretwork represents respect for ancestors, water flows represent renewal, and the spiral is time itself.”</p>\n      </blockquote>\n\n      <p>Today, sustainable reforestation programs run by the artisan guild ensure that for every copal tree harvested, ten saplings are planted in the surrounding hillsides, guaranteeing that this dazzling marriage of folklore and craftsmanship endures for centuries to come.</p>\n    ",
+    "relatedIds": [
+      "mexico-beyond-tourist-trail",
+      "mezcal-renaissance-oaxaca"
+    ]
   },
-
-  // --- 6. OPINION ---
-  'nearshoring-opportunity-or-bubble': {
-    id: 'nearshoring-opportunity-or-bubble',
-    category: 'OPINION',
-    categoryClass: 'opinion',
-    tag: 'Economic Analysis',
-    pillar: 'The Real Mexico',
-    title: 'Nearshoring Realities: Can Northern Infrastructure Keep Up With Industrial Demand?',
-    subtitle: 'Billions are arriving in industrial parks, but electrical transmission and water shortages require urgent federal leadership.',
-    author: 'Dr. Alejandro Treviño',
-    authorRole: 'Economic Columnist & Professor at ITESM',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/hero_palacio.jpg',
-    imageCaption: 'Industrial parks and logistics terminals humming across Nuevo León, Coahuila, and Chihuahua.',
-    lead: "The geopolitical realignment of global supply chains has handed Mexico the economic opportunity of a century. Whether this capital boom transforms into enduring nationwide prosperity depends entirely on infrastructure delivery.",
-    body: `
-      <p class="drop-cap">Over the past three years, the word <em>nearshoring</em> has achieved almost mythical status in Mexican financial circles. Industrial real estate occupancy rates in Monterrey, Saltillo, and Ciudad Juárez hover near 99%, while manufacturing giants from Germany, Japan, and Taiwan break ground on electric vehicle and semiconductor supply facilities.</p>
-
-      <p>Yet corporate enthusiasm masks critical structural bottlenecks. Factory managers frequently lament that while their factory walls can be constructed in six months, securing reliable high-voltage electrical grid hookups from CFE can take eighteen.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Nearshoring is not a guaranteed windfall; it is a golden window of opportunity that will close if Mexico fails to upgrade clean power transmission and industrial water recycling.”</p>
-      </blockquote>
-
-      <h3>Bridging North and South</h3>
-      <p>The true strategic test for the Mexican state is preventing the widening of the historic economic chasm between the hyper-industrialized northern border and the agrarian south. Projects like the Interoceanic Corridor of the Isthmus of Tehuantepec (CIIT) represent commendable attempts to link both coasts, but sustained private capital incentives will determine whether southern logistics hubs achieve self-sustaining velocity.</p>
-    `,
-    relatedIds: ['what-comes-after-claudia', 'judicial-reform-mexico']
+  "americans-moving-to-mexico": {
+    "id": "americans-moving-to-mexico",
+    "category": "LIVING IN MEXICO",
+    "categoryClass": "living",
+    "tag": "Expat Practical Guide",
+    "pillar": "People",
+    "title": "What Americans Should Know Before Moving to Mexico",
+    "subtitle": "Life, costs and practical advice for a smoother transition.",
+    "author": "Sarah Jenkins & Miguel Soto",
+    "authorRole": "Expat Affairs Correspondents",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_san_miguel.jpg",
+    "imageCaption": "The cobblestone streets and colonial architecture of San Miguel de Allende, Guanajuato.",
+    "lead": "Life, costs and practical advice for a smoother transition. From immigration paperwork to health insurance and community integration, here is the realistic blueprint for building a life south of the border.",
+    "body": "\n      <p class=\"drop-cap\">The dream of trading frigid northern winters or skyrocketing coastal rents for colonial courtyards, year-round sunshine, and world-class cuisine continues to draw tens of thousands of Americans and Canadians to Mexico each year. Yet as expat veterans will tell you, a successful move requires much more than an appetite for street tacos.</p>\n\n      <h3>1. Navigating Visas: Tourist vs. Residente Temporal</h3>\n      <p>Gone are the days when foreigners could comfortably live year-round on rolling 180-day tourist cards (FMM). Mexico’s Instituto Nacional de Migración (INM) strictly enforces residency rules. If you intend to spend more than six months per year in the country, you must apply for <strong>Residencia Temporal</strong> or <strong>Residencia Permanente</strong> through a Mexican consulate in your home country before arriving.</p>\n      <p>Financial solvency requirements are tied to the Mexican minimum wage and UMA values. In 2026, applicants generally need to demonstrate roughly $3,200 to $4,500 USD in monthly passive income or investments exceeding $70,000 USD over the previous twelve months.</p>\n\n      <h3>2. Cost of Living Realities</h3>\n      <p>While Mexico remains remarkably affordable compared to major U.S. metropolitan hubs, prices have shifted substantially in expat magnets such as Mexico City’s Roma-Condesa corridors, San Miguel de Allende, and Puerto Vallarta. A comfortable lifestyle for a couple in a mid-sized colonial city ranges between $2,000 and $3,500 USD per month including rent, private medical coverage, dining, and utilities.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“The expats who thrive longest in Mexico are those who make an earnest effort to speak the language and invest in their local neighborhood ecosystem.”</p>\n      </blockquote>\n\n      <h3>3. Healthcare: World-Class at a Fraction of the Cost</h3>\n      <p>Healthcare is consistently ranked among the greatest advantages of living in Mexico. Private hospital networks such as ABC Hospital in CDMX, Ángeles, and Star Médica offer state-of-the-art diagnostic facilities and bilingual specialists at costs 60% to 75% lower than across the northern border. Most long-term residents purchase international expat major medical policies or utilize Mexico’s voluntary public IMSS scheme for routine coverage.</p>\n    ",
+    "relatedIds": [
+      "mexico-city-neighborhood-guide",
+      "resico-taxes-for-expats",
+      "fideicomiso-property-guide"
+    ]
   },
-
-  'two-mexicos-editorial': {
-    id: 'two-mexicos-editorial',
-    category: 'OPINION',
-    categoryClass: 'opinion',
-    tag: 'Social Perspective',
-    pillar: 'The Real Mexico',
-    title: 'The Two Mexicos: Preserving Community Fabric in an Era of High-Speed Growth',
-    subtitle: 'How modern prosperity and ancestral collective responsibility can coexist without mutual destruction.',
-    author: 'Ricardo Castillo',
-    authorRole: 'Founder & Editor-in-Chief',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '4 min read',
-    image: 'assets/images/hero_palacio.jpg',
-    imageCaption: 'Colonial archways framing modern cosmopolitan skylines in central Mexico.',
-    lead: "Mexico has never been a monolithic country. As digital nomad hubs and multinational factories alter the urban fabric, the civic challenge of our time is safeguarding communal solidarity.",
-    body: `
-      <p class="drop-cap">To live in Mexico is to constantly inhabit two temporal realities simultaneously: the ancient rhythms of communal solidarity (<em>el tequio</em>, <em>la faena</em>) where neighbors unite to pave roads or restore municipal wells, and the high-velocity friction of modern hyper-capitalism.</p>
-
-      <p>When foreign capital and remote workers arrive in historic neighborhoods, they often celebrate the warmth, safety, and community spirit of Mexican street life. Yet if that very influx causes rapid displacement of the families and multi-generational bakers and cobblers who created that atmosphere, everyone loses.</p>
-
-      <p>The antidote is civic integration: newcomers who pay taxes locally, learn Spanish, patronize neighborhood shops, and participate in civic dialogues. Mexico welcomes the world with open arms; the world owes Mexico thoughtful stewardship in return.</p>
-    `,
-    relatedIds: ['editor-worth-understanding', 'americans-moving-to-mexico']
+  "mexico-city-neighborhood-guide": {
+    "id": "mexico-city-neighborhood-guide",
+    "category": "LIVING IN MEXICO",
+    "categoryClass": "living",
+    "tag": "Urban Living",
+    "pillar": "Places",
+    "title": "Beyond Roma & Condesa: The CDMX Neighborhoods Expats Are Choosing in 2026",
+    "subtitle": "From leafy San Rafael to tranquil Coyoacán and creative Santa María la Ribera.",
+    "author": "Clara Del Bosque",
+    "authorRole": "Urban Trends Reporter",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/article_san_miguel.jpg",
+    "imageCaption": "A sunlit colonial avenue in the historic and bohemian quarters of Mexico City.",
+    "lead": "As rents in Roma Norte and Condesa reach parity with southern European capitals, international residents are discovering the architectural gems, independent cafes, and authentic neighborhood life of historic colonias.",
+    "body": "\n      <p class=\"drop-cap\">Five years ago, any expat moving to Mexico City would head straight for Roma Norte, Condesa, or Polanco. But in 2026, the creative and residential center of gravity is branching outward into colonias with distinct identities and rich architectural pedigrees.</p>\n\n      <h3>San Rafael & Santa María la Ribera: Porfirian Grandeur</h3>\n      <p>Directly west of the historic center, San Rafael and Santa María la Ribera showcase towering French-inspired townhomes built during the Porfiriato era. Anchored by the iconic Moorish Kiosk (Kiosco Morisco) and a vibrant community of contemporary art galleries, independent theaters, and family-owned pulquerías, these colonias offer walkable streets at half the rental costs of Roma.</p>\n\n      <h3>San Pedro de los Pinos & Escandón</h3>\n      <p>For young families and remote professionals seeking quiet tree-lined streets, local municipal markets, and neighborhood bakeries without the weekend nightlife crowds, Escandón and San Pedro de los Pinos have emerged as top residential contenders.</p>\n    ",
+    "relatedIds": [
+      "americans-moving-to-mexico",
+      "resico-taxes-for-expats"
+    ]
   },
-
-  // --- 7. EXPAT LIFE ---
-  'resico-taxes-for-expats': {
-    id: 'resico-taxes-for-expats',
-    category: 'EXPAT LIFE',
-    categoryClass: 'expat',
-    tag: 'Financial & Legal',
-    pillar: 'People',
-    title: 'Navigating the Mexican Tax System: A Guide to the RESICO Regime for Foreigners',
-    subtitle: 'How Mexico’s simplified tax framework offers rates as low as 1% to 2.5% for qualifying foreign residents.',
-    author: 'Contador Patricia Nava',
-    authorRole: 'Tax Attorney & Expat Consultant',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_san_miguel.jpg',
-    imageCaption: 'SAT tax identification office in Mexico City where foreigners obtain their digital signature (e.firma).',
-    lead: "Many expats assume paying taxes in Mexico is an impenetrable bureaucratic nightmare. In reality, Mexico's RESICO regime is one of the most competitive simplified tax frameworks in the Americas.",
-    body: `
-      <p class="drop-cap">For expatriates holding <strong>Residente Temporal</strong> or <strong>Residente Permanente</strong> status who earn active business income, freelance fees, or rental income from Mexican property, the SAT (Servicio de Administración Tributaria) introduced the <em>Régimen Simplificado de Confianza</em> (RESICO).</p>
-
-      <h3>How RESICO Works</h3>
-      <p>Under RESICO, eligible individuals earning up to 3.5 million pesos annually (roughly $190,000 USD) pay a progressive flat income tax rate ranging between just <strong>1.0% and 2.5%</strong> on gross revenue, eliminating the need for complicated itemized deductions.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Securing your RFC and e.firma (electronic digital signature) is the single most empowering legal step an expat can take in Mexico.”</p>
-      </blockquote>
-
-      <h3>Key Rules & Restrictions</h3>
-      <p>Not everyone qualifies for RESICO. Those with passive capital dividends from foreign corporations or partners in Mexican Sociedades Anónimas must file under standard general tax regimes. Working with a bilingual certified public accountant (CPA) familiar with both SAT and IRS foreign tax credit provisions (Form 1116 / 2555) is vital.</p>
-    `,
-    relatedIds: ['americans-moving-to-mexico', 'fideicomiso-property-guide']
+  "gran-acuario-mazatlan-best-tourism-product": {
+    "id": "gran-acuario-mazatlan-best-tourism-product",
+    "category": "TRAVEL",
+    "categoryClass": "travel",
+    "tag": "National Tourism Award • Mazatlán",
+    "pillar": "Places",
+    "title": "Gran Acuario Mazatlán Wins Award for Best Tourism Product",
+    "subtitle": "The venue dedicated to the marine life of the Sea of Cortez was recognized at the El Ángel del Turismo National Awards, held in Puebla.",
+    "author": "Mex-Ahoy! Editorial Desk",
+    "authorRole": "Tourism & Coastal Destinations",
+    "date": "November 3, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/acuario_mazatlan_oceanico.jpg",
+    "imageCaption": "One of the monumental viewing windows at Gran Acuario Mazatlán, bringing visitors face to face with the marine biodiversity of the Sea of Cortez.",
+    "lead": "The Gran Acuario Mazatlán has become one of the attractions expanding the port’s tourism offerings. Its approach to bringing visitors closer to the biodiversity of the Sea of Cortez and the opportunity to interact with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.",
+    "body": "\n      <p class=\"drop-cap\">The Gran Acuario Mazatlán has become one of the attractions that expand the port’s tourism offerings. Its proposal to bring visitors closer to the biodiversity of the Sea of Cortez and the possibility of interacting with different species earned it the award for Best Tourism Product at the El Ángel del Turismo National Awards, held in Puebla.</p>\n\n      <p>Located facing the coastal landscape of Mazatlán, the venue offers a journey through the ecosystems that give life to the so-called “Aquarium of the World.” Its architecture, designed by the firm of Mexican architect Tatiana Bilbao, establishes a dialogue with the surroundings right from the exterior. Upon entering, visitors discover distinct habitats that lead from intertidal and coastal zones all the way to the open ocean.</p>\n\n      <div class=\"article-photo-grid\">\n        <figure class=\"article-figure-inline\">\n          <img src=\"assets/images/acuario_mazatlan_arrecife.jpg\" alt=\"Cylindrical coral reef exhibit at Gran Acuario Mazatlán\">\n          <figcaption>A towering cylindrical coral reef habitat showcasing the vibrant marine ecosystems of the Sea of Cortez.</figcaption>\n        </figure>\n        <figure class=\"article-figure-inline\">\n          <img src=\"assets/images/acuario_mazatlan_medusas.jpg\" alt=\"Visitors observing the illuminated jellyfish exhibit at Gran Acuario Mazatlán\">\n          <figcaption>Visitors admire the glowing jellyfish habitat during their journey through the aquarium’s marine galleries.</figcaption>\n        </figure>\n      </div>\n\n      <p>One of the most striking moments takes place in front of its large viewing windows, which allow visitors to observe different aquatic species up close and learn about aspects of their behavior. Among its inhabitants are Humboldt penguins, sharks, and rays. It is also home to capybaras, birds, and deer. Throughout the tour, the exhibitions bring the public closer to the importance of these species and their conservation.</p>\n\n      <div class=\"article-award-split\">\n        <figure class=\"article-award-figure\">\n          <img src=\"assets/images/acuario_mazatlan_premio.jpg\" alt=\"Mireya Sosa Osuna and Rafael Lizárraga Favela with the El Ángel del Turismo award\">\n          <figcaption>Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, Director of Gran Acuario Mazatlán, with the El Ángel del Turismo 2026 trophy and Best Tourism Product diploma.</figcaption>\n        </figure>\n        <div>\n          <p>The award was received by businessman Ernesto Coppel Kelly, accompanied by Mireya Sosa Osuna, Secretary of Tourism of Sinaloa, and Rafael Lizárraga Favela, director of the venue, during the ceremony that brought together representatives from different sectors of the country’s tourism industry.</p>\n          <p style=\"margin-bottom:0;\">For Mazatlán, this recognition gives national projection to one of its most representative attractions. The Gran Acuario is part of a tourism offering that also includes the Historic Center and its cultural spaces, the <em>malecón</em> boardwalk, gastronomy, and sunsets facing the Pacific—elements that distinguish the port as one of the most renowned beach destinations in Mexico.</p>\n        </div>\n      </div>\n    ",
+    "relatedIds": [
+      "hidden-gems-caribbean-coast",
+      "copper-canyon-chepe-train",
+      "mexico-beyond-tourist-trail"
+    ]
   },
-
-  'fideicomiso-property-guide': {
-    id: 'fideicomiso-property-guide',
-    category: 'EXPAT LIFE',
-    categoryClass: 'expat',
-    tag: 'Real Estate Legalities',
-    pillar: 'People',
-    title: 'Buying Coastal Real Estate in Mexico: Demystifying the 50-Year Fideicomiso Trust',
-    subtitle: 'Everything foreigners need to know about Article 27 of the Constitution and secure bank property trusts.',
-    author: 'Notario Lic. Gerardo Morales',
-    authorRole: 'Real Estate Law Analyst',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_caribbean.jpg',
-    imageCaption: 'Oceanfront villa along the Mayan Riviera held securely under a Mexican bank fideicomiso trust.',
-    lead: "One of the most persistent myths among foreign buyers is that 'non-citizens cannot own land near the ocean in Mexico.' The truth is that the Fideicomiso trust provides ironclad, bank-guaranteed ownership rights.",
-    body: `
-      <p class="drop-cap">Under Article 27 of the Mexican Constitution, the <strong>Restricted Zone</strong> is defined as any land within 50 kilometers (31 miles) of the coast or 100 kilometers (62 miles) of international borders. Foreigners may own inland property directly in fee simple, but coastal properties require a <em>Fideicomiso</em>.</p>
-
-      <h3>What is a Fideicomiso?</h3>
-      <p>A Fideicomiso is a 50-year renewable bank trust where an authorized Mexican financial institution (such as BBVA, Santander, or Banorte) acts as the trustee, holding nominal legal title on behalf of the foreign beneficiary. You hold 100% of the beneficial rights: you can sell, lease, remodel, bequeath to heirs, or mortgage the property at will.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“The bank cannot encumber or seize the property; it exists solely as the vehicle ensuring constitutional compliance for international owners.”</p>
-      </blockquote>
-
-      <p>The trust is automatically renewable for successive 50-year periods upon payment of standard bank maintenance fees, providing generations of security for homeowners along the Pacific, Gulf, and Caribbean coasts.</p>
-    `,
-    relatedIds: ['resico-taxes-for-expats', 'americans-moving-to-mexico']
+  "hidden-gems-caribbean-coast": {
+    "id": "hidden-gems-caribbean-coast",
+    "category": "TRAVEL",
+    "categoryClass": "travel",
+    "tag": "Coastal Exploration",
+    "pillar": "Places",
+    "title": "Hidden Gems Along Mexico's Caribbean Coast",
+    "subtitle": "Beautiful places beyond the crowds.",
+    "author": "David R. Vance",
+    "authorRole": "Travel & Marine Adventure Editor",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/article_caribbean.jpg",
+    "imageCaption": "The ancient Mayan fortress perched on sea cliffs above the pristine Caribbean waters.",
+    "lead": "Beautiful places beyond the crowds. Escape the neon corridors and all-inclusive super-resorts to find untouched biosphere reserves, crystal-clear freshwater lagoons, and sleepy fishing villages along Quintana Roo.",
+    "body": "\n      <p class=\"drop-cap\">Few coastlines in the world can match the hypnotic turquoise palette of the Mexican Caribbean. Yet for many international visitors, the experience is confined to high-rise hotel strips and crowded beach clubs thumping with bass.</p>\n\n      <p>Travelers who venture just an hour or two off the beaten highway will discover a vastly different coastline: pristine mangrove estuaries where manatees graze peacefully, secret freshwater cenotes filtered through limestone caverns, and fishing communities where life still moves according to the tides.</p>\n\n      <h3>1. Bacalar: The Lagoon of Seven Colors</h3>\n      <p>Located near the border with Belize, Bacalar is one of Mexico’s most astonishing natural wonders. Fed by underground river systems rather than ocean water, this 42-kilometer-long lake shifts from milky jade to electric cerulean depending on water depth and cloud cover. It is also home to living stromatolites—some of the planet's oldest microbial organisms, dating back over 3.5 billion years.</p>\n\n      <h3>2. Sian Ka'an Biosphere Reserve</h3>\n      <p>Covering over 1.3 million acres of tropical wetlands, coral reefs, and coastal lagoons, Sian Ka'an (Mayan for \"Origin of the Sky\") is a UNESCO World Heritage site that offers eco-guided boat treks through ancient canals dug by Mayan traders over a thousand years ago.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Gliding silently in a wooden panga through Sian Ka’an, with osprey circling overhead and sea turtles surfacing alongside, is the Caribbean as nature intended.”</p>\n      </blockquote>\n\n      <h3>3. Puerto Morelos: The Timeless Fishing Haven</h3>\n      <p>Nestled midway between Cancún and Playa del Carmen, Puerto Morelos has tenaciously preserved its charming seaside village identity. With its iconic tilted lighthouse, vibrant municipal square, and a National Marine Park protecting a world-class barrier reef just 500 meters offshore, it remains the ultimate refuge for travelers seeking tranquility.</p>\n    ",
+    "relatedIds": [
+      "gran-acuario-mazatlan-best-tourism-product",
+      "copper-canyon-chepe-train",
+      "mexico-beyond-tourist-trail"
+    ]
   },
-
-  // --- 8. HISTORY ---
-  'manila-galleon-maritime-route': {
-    id: 'manila-galleon-maritime-route',
-    category: 'HISTORY',
-    categoryClass: 'history',
-    tag: 'Maritime Chronicles',
-    pillar: 'The Real Mexico',
-    title: 'The Silver Highway: How Acapulco & the Manila Galleon Created the First Global Economy',
-    subtitle: 'For 250 years, colossal wooden galleons bridged Asia and Europe through the heart of New Spain.',
-    author: 'Dr. Santiago Villaseñor',
-    authorRole: 'Maritime Historian & Author',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '6 min read',
-    image: 'assets/images/mex_ahoy_logo_vertical.jpg',
-    imageCaption: 'A historic 17th-century navigational chart showing the Pacific trade route from Manila to Acapulco.',
-    lead: "Long before container shipping or modern currency exchanges, the treacherous 14,000-mile Pacific voyage of the Nao de China united silk weavers in Canton, spice traders in the Moluccas, and silver miners in Zacatecas.",
-    body: `
-      <p class="drop-cap">Every autumn between 1565 and 1815, lookout bells rang from the stone ramparts of the Fort of San Diego in Acapulco. On the horizon appeared the battered white sails of the <em>Galeón de Manila</em>, having survived up to six harrowing months traversing the stormy North Pacific gyre from the Philippines.</p>
-
-      <p>In its cavernous holds rested an emperor's ransom: crates of delicate blue-and-white Ming porcelain, bolts of shimmering Chinese silk, chests of Ceylon cinnamon and Moluccan cloves, ivory carvings, and Japanese folding screens (<em>biombos</em>).</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Acapulco was the turnstile of global capitalism. Asian merchants demanded only one thing in return: pure, unadulterated Mexican silver eight-real coins (Reales de a Ocho).”</p>
-      </blockquote>
-
-      <h3>How Asia Transformed Mexican Culture</h3>
-      <p>The trade left an indelible mark on Mexican identity: the iconic Puebla Talavera ceramic glaze was born from potters imitating Chinese porcelain; the traditional <em>rebozo</em> shawl was influenced by Filipina textiles; and mango varieties like the sweet <em>Manila</em> took root in the tropical soils of Veracruz.</p>
-    `,
-    relatedIds: ['chichimeca-war-frontier', 'editor-worth-understanding']
+  "copper-canyon-chepe-train": {
+    "id": "copper-canyon-chepe-train",
+    "category": "TRAVEL",
+    "categoryClass": "travel",
+    "tag": "Mountain Expeditions",
+    "pillar": "Places",
+    "title": "Riding the Chepe Express: Traversing the Depths of the Sierra Tarahumara",
+    "subtitle": "Inside Mexico’s most breathtaking passenger train route through four times the volume of the Grand Canyon.",
+    "author": "Fernando Valenzuela",
+    "authorRole": "Railways & Adventure Specialist",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_caribbean.jpg",
+    "imageCaption": "The dramatic serpentine railway clinging to canyon cliffs in Chihuahua and Sinaloa.",
+    "lead": "Climbing from sea-level coastal plains in Sinaloa up into pine-scented alpine heights of 2,400 meters, El Chepe offers one of the world's last great railway odysseys.",
+    "body": "\n      <p class=\"drop-cap\">Spanning 653 kilometers, 86 tunnels, and 37 bridges suspended over abyss-like gorges, the Ferrocarril Chihuahua al Pacífico—affectionately known as El Chepe—is an engineering triumph that took nearly a century to complete.</p>\n\n      <p>Leaving the coastal town of Los Mochis at dawn, the Chepe Express slowly ascends alongside rushing rivers before plunging into the heart of the Copper Canyon (Barrancas del Cobre), a network of six distinct ravines that dwarfs Arizona’s Grand Canyon in both depth and total land area.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“When the train rounds the curve at Divisadero, the entire dining car falls silent. The canyon opens beneath you like a geological cathedral painted in copper, ochre, and deep evergreen.”</p>\n      </blockquote>\n\n      <h3>Meeting the Rarámuri Runners</h3>\n      <p>The high plateau is the ancestral home of the Rarámuri (Tarahumara) people, legendary endurance runners whose footwear—simple sandals carved from tire tread called <em>huaraches</em>—has carried them across hundreds of rugged mountain kilometers for generations. Stopping in Creel and Cerocahui allows travelers to support community-led cooperative lodges and trek ancient forest trails.</p>\n    ",
+    "relatedIds": [
+      "gran-acuario-mazatlan-best-tourism-product",
+      "hidden-gems-caribbean-coast",
+      "mexico-beyond-tourist-trail"
+    ]
   },
-
-  'chichimeca-war-frontier': {
-    id: 'chichimeca-war-frontier',
-    category: 'HISTORY',
-    categoryClass: 'history',
-    tag: 'Colonial Frontier',
-    pillar: 'Places',
-    title: 'The Silver Frontier: The 50-Year War That Built the Colonial Heart of the Bajío',
-    subtitle: 'How fierce indigenous resistance shaped the fortified silver roads from Zacatecas to Mexico City.',
-    author: 'Valeria Montemayor',
-    authorRole: 'Colonial History Specialist',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '5 min read',
-    image: 'assets/images/article_san_miguel.jpg',
-    imageCaption: 'The historic silver route (Camino Real de Tierra Adentro) weaving through the Bajío highlands.',
-    lead: "When the richest silver veins on Earth were struck in Zacatecas and Guanajuato, the Spanish crown faced an adversary they could not defeat by force: the nomadic Chichimeca confederations of the northern plateau.",
-    body: `
-      <p class="drop-cap">Unlike the centralized Aztec empire, which fell within two years, the semi-nomadic Chichimeca nations (Guachichiles, Zacatecos, and Pames) had no emperors to capture or capitals to besiege. For half a century (1550–1600), they waged a devastating guerrilla campaign along the <em>Camino Real de Tierra Adentro</em>.</p>
-
-      <p>To protect silver mule trains, the viceroyalty was forced to construct a chain of fortified garrison towns that today form Mexico’s most celebrated colonial tourist corridor: San Miguel de Allende, Celaya, Aguascalientes, and Lagos de Moreno.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Peace was ultimately won not by cavalry swords, but by diplomacy and food: the famous 'Peace by Purchase' negotiated by Mestizo captain Miguel Caldera.”</p>
-      </blockquote>
-    `,
-    relatedIds: ['manila-galleon-maritime-route', 'americans-moving-to-mexico']
+  "mezcal-renaissance-oaxaca": {
+    "id": "mezcal-renaissance-oaxaca",
+    "category": "FOOD & DRINK",
+    "categoryClass": "food",
+    "tag": "Agave Heritage",
+    "pillar": "Culture",
+    "title": "The Sacred Smoke: Inside Oaxaca’s Artisanal Mezcal Renaissance",
+    "subtitle": "How traditional palenqueros are protecting wild agaves against industrial homogenization.",
+    "author": "Mateo Cárdenas",
+    "authorRole": "Spirits & Gastronomy Editor",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_market.jpg",
+    "imageCaption": "Underground conical stone pit where agave hearts roast over sweet holm oak and volcanic rock.",
+    "lead": "As global demand for mezcal skyrockets from London to Tokyo, small-scale producers in Oaxaca’s Sierra Sur are fighting to preserve ancestral underground roasting, horse-drawn stone tahonas, and wild varietal biodiversity.",
+    "body": "\n      <p class=\"drop-cap\">To stand in a traditional <em>palenque</em> at dawn is to witness an alchemical process unchanged since the 16th century. Smoke curls lazily from an earthen conical pit where tons of ripe <em>espadín</em> and wild <em>tobalá</em> agave hearts have roasted for days over red-hot volcanic river stones covered with river cane and soil.</p>\n\n      <p>“Industrial tequila chose speed and stainless steel autoclaves,” says Maestro Mezcalero Don Fortunato in Matatlán. “Mezcal chose time, wood, stone, and the wild airborne yeasts of the mountain. You cannot rush what nature took fifteen years to grow.”</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“When you sip mezcal, you are not tasting alcohol; you are drinking years of Oaxacan sunlight, rain, and soil captured inside an agave heart.”</p>\n      </blockquote>\n\n      <h3>The Battle for Wild Varietals: Tobalá, Tepeztate & Arroqueño</h3>\n      <p>While cultivated <em>espadín</em> matures in seven to eight years, wild varieties such as <em>tepeztate</em>—which clings to sheer limestone cliff faces—require up to 25 to 30 years before blooming. Forward-thinking cooperatives have enacted strict village quotas and communal nursery reforestation to ensure these botanical treasures survive global commercialization.</p>\n    ",
+    "relatedIds": [
+      "seven-moles-of-oaxaca",
+      "mexico-beyond-tourist-trail"
+    ]
   },
-
-  // --- 9. THE EDITOR'S DESK ---
-  'editor-worth-understanding': {
-    id: 'editor-worth-understanding',
-    category: "THE EDITOR'S DESK",
-    categoryClass: 'editorial',
-    tag: 'Editorial Note',
-    pillar: 'The Real Mexico',
-    title: 'A Mexico Worth Understanding',
-    subtitle: 'Why we launched Mex-Ahoy! as an independent compass for curious minds.',
-    author: 'Ricardo Castillo',
-    authorRole: 'Founder & Editor-in-Chief',
-    date: 'October 8, 2026',
-    issue: 'Vol. 1 • No. 01',
-    readTime: '3 min read',
-    image: 'assets/images/mex_ahoy_logo_vertical.jpg',
-    imageCaption: 'Mex-Ahoy! official emblem: The helm of independent exploration.',
-    lead: "Every week, we bring you clear, thoughtful and insightful stories about the Mexico that matters — its people, its cultures, its opportunities and its challenges. Our goal is simple: to help you understand a complex and fascinating country.",
-    body: `
-      <p class="drop-cap">Welcome to the inaugural issue of <strong>Mex-Ahoy!</strong>. For years, international coverage of Mexico has swung between two simplistic extremes: sensationalist headlines focused solely on border turbulence, or glossy resort brochures that reduce a nation of 130 million people to margaritas on a white-sand beach.</p>
-
-      <p>We created this weekly newspaper because we believe the reality of Mexico is infinitely richer, more nuanced, and vastly more captivating than either cliché allows. Whether you are an expatriate making your home here, an investor tracking North American industrial realignments, or simply an inquisitive traveler who has fallen under this country’s magnetic spell, you deserve journalism that treats Mexico with intelligence and respect.</p>
-
-      <blockquote class="newspaper-quote">
-        <p>“Mex-Ahoy! is your weekly compass. We look into the politics, the neighborhoods, the artisan workshops, and the culinary kitchens that define the soul of Mexico.”</p>
-      </blockquote>
-
-      <p>Our editorial charter rests on three cardinal principles: <em>clarity without condescension</em>, <em>cultural immersion with critical honesty</em>, and <em>practical utility for everyday life</em>. Every Thursday morning, expect sharp political analysis, reliable guidance on visas, legalities and living costs, evocative travel dispatches, and culinary investigations that go deep into Mexico’s terroirs.</p>
-
-      <p>Thank you for boarding this voyage with us. Grab a warm cup of Chiapas coffee or a fresh pan dulce, and enjoy Volume 1, Number 1 of Mex-Ahoy!.</p>
-    `,
-    relatedIds: ['what-comes-after-claudia', 'mexico-beyond-tourist-trail']
+  "seven-moles-of-oaxaca": {
+    "id": "seven-moles-of-oaxaca",
+    "category": "FOOD & DRINK",
+    "categoryClass": "food",
+    "tag": "Culinary Traditions",
+    "pillar": "Culture",
+    "title": "Beyond the Taco: Decoding the Seven Legendary Moles of Southern Mexico",
+    "subtitle": "From pitch-black Mole Negro to tart Verde and delicate Amarillo—the pinnacle of Mexican haute cuisine.",
+    "author": "Chef Beatriz Solano",
+    "authorRole": "Culinary Historian",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/article_market.jpg",
+    "imageCaption": "A clay cazuela simmering fragrant mole negro perfumed with charred chilhuacle chilies and cacao.",
+    "lead": "Mole is not a sauce; it is a sacred Mexican symphonic preparation that can require over thirty ingredients, two days of patient labor, and centuries of Zapotec, Mixtec, and Spanish culinary confluence.",
+    "body": "\n      <p class=\"drop-cap\">If French culinary philosophy is built on stocks and butter reductions, Mexican classical gastronomy reaches its sublime zenith in the complex architecture of <em>mole</em>. Oaxaca, deservedly celebrated as the Land of the Seven Moles, treats these recipes with the reverence of family heirlooms.</p>\n\n      <h3>1. Mole Negro (The King of Moles)</h3>\n      <p>Distinguished by the rare chilhuacle negro chili, roasted seeds, plantains, almonds, sesame, and dark Mexican stone-ground cacao. Its flavor is a masterclass in balance: smoky, deeply savory, subtly sweet, and mysteriously bitter.</p>\n\n      <h3>2. Mole Coloradito & Manchamanteles</h3>\n      <p>Brick-red and velvety, Coloradito relies on ancho and guajillo chilies with sweet hints of cinnamon and ripe tomatoes. Manchamanteles (\"tablecloth stainer\") pairs chili richness with pineapple and sweet plantains.</p>\n\n      <h3>3. Mole Verde & Amarillo</h3>\n      <p>Verde celebrates fresh herbs—principally sacred <em>hoja santa</em>, epazote, and green pumpkin seeds. Amarillo delivers a vibrant aromatic punch spiced with ground cloves, cumin, and Mexican allspice.</p>\n    ",
+    "relatedIds": [
+      "mezcal-renaissance-oaxaca",
+      "mexico-beyond-tourist-trail"
+    ]
+  },
+  "nearshoring-opportunity-or-bubble": {
+    "id": "nearshoring-opportunity-or-bubble",
+    "category": "OPINION",
+    "categoryClass": "opinion",
+    "tag": "Economic Analysis",
+    "pillar": "The Real Mexico",
+    "title": "Nearshoring Realities: Can Northern Infrastructure Keep Up With Industrial Demand?",
+    "subtitle": "Billions are arriving in industrial parks, but electrical transmission and water shortages require urgent federal leadership.",
+    "author": "Dr. Alejandro Treviño",
+    "authorRole": "Economic Columnist & Professor at ITESM",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/hero_palacio.jpg",
+    "imageCaption": "Industrial parks and logistics terminals humming across Nuevo León, Coahuila, and Chihuahua.",
+    "lead": "The geopolitical realignment of global supply chains has handed Mexico the economic opportunity of a century. Whether this capital boom transforms into enduring nationwide prosperity depends entirely on infrastructure delivery.",
+    "body": "\n      <p class=\"drop-cap\">Over the past three years, the word <em>nearshoring</em> has achieved almost mythical status in Mexican financial circles. Industrial real estate occupancy rates in Monterrey, Saltillo, and Ciudad Juárez hover near 99%, while manufacturing giants from Germany, Japan, and Taiwan break ground on electric vehicle and semiconductor supply facilities.</p>\n\n      <p>Yet corporate enthusiasm masks critical structural bottlenecks. Factory managers frequently lament that while their factory walls can be constructed in six months, securing reliable high-voltage electrical grid hookups from CFE can take eighteen.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Nearshoring is not a guaranteed windfall; it is a golden window of opportunity that will close if Mexico fails to upgrade clean power transmission and industrial water recycling.”</p>\n      </blockquote>\n\n      <h3>Bridging North and South</h3>\n      <p>The true strategic test for the Mexican state is preventing the widening of the historic economic chasm between the hyper-industrialized northern border and the agrarian south. Projects like the Interoceanic Corridor of the Isthmus of Tehuantepec (CIIT) represent commendable attempts to link both coasts, but sustained private capital incentives will determine whether southern logistics hubs achieve self-sustaining velocity.</p>\n    ",
+    "relatedIds": [
+      "what-comes-after-claudia",
+      "judicial-reform-mexico"
+    ]
+  },
+  "two-mexicos-editorial": {
+    "id": "two-mexicos-editorial",
+    "category": "OPINION",
+    "categoryClass": "opinion",
+    "tag": "Social Perspective",
+    "pillar": "The Real Mexico",
+    "title": "The Two Mexicos: Preserving Community Fabric in an Era of High-Speed Growth",
+    "subtitle": "How modern prosperity and ancestral collective responsibility can coexist without mutual destruction.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Founder & Editor-in-Chief",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/hero_palacio.jpg",
+    "imageCaption": "Colonial archways framing modern cosmopolitan skylines in central Mexico.",
+    "lead": "Mexico has never been a monolithic country. As digital nomad hubs and multinational factories alter the urban fabric, the civic challenge of our time is safeguarding communal solidarity.",
+    "body": "\n      <p class=\"drop-cap\">To live in Mexico is to constantly inhabit two temporal realities simultaneously: the ancient rhythms of communal solidarity (<em>el tequio</em>, <em>la faena</em>) where neighbors unite to pave roads or restore municipal wells, and the high-velocity friction of modern hyper-capitalism.</p>\n\n      <p>When foreign capital and remote workers arrive in historic neighborhoods, they often celebrate the warmth, safety, and community spirit of Mexican street life. Yet if that very influx causes rapid displacement of the families and multi-generational bakers and cobblers who created that atmosphere, everyone loses.</p>\n\n      <p>The antidote is civic integration: newcomers who pay taxes locally, learn Spanish, patronize neighborhood shops, and participate in civic dialogues. Mexico welcomes the world with open arms; the world owes Mexico thoughtful stewardship in return.</p>\n    ",
+    "relatedIds": [
+      "editor-worth-understanding",
+      "americans-moving-to-mexico"
+    ]
+  },
+  "resico-taxes-for-expats": {
+    "id": "resico-taxes-for-expats",
+    "category": "EXPAT LIFE",
+    "categoryClass": "expat",
+    "tag": "Financial & Legal",
+    "pillar": "People",
+    "title": "Navigating the Mexican Tax System: A Guide to the RESICO Regime for Foreigners",
+    "subtitle": "How Mexico’s simplified tax framework offers rates as low as 1% to 2.5% for qualifying foreign residents.",
+    "author": "Contador Patricia Nava",
+    "authorRole": "Tax Attorney & Expat Consultant",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_san_miguel.jpg",
+    "imageCaption": "SAT tax identification office in Mexico City where foreigners obtain their digital signature (e.firma).",
+    "lead": "Many expats assume paying taxes in Mexico is an impenetrable bureaucratic nightmare. In reality, Mexico's RESICO regime is one of the most competitive simplified tax frameworks in the Americas.",
+    "body": "\n      <p class=\"drop-cap\">For expatriates holding <strong>Residente Temporal</strong> or <strong>Residente Permanente</strong> status who earn active business income, freelance fees, or rental income from Mexican property, the SAT (Servicio de Administración Tributaria) introduced the <em>Régimen Simplificado de Confianza</em> (RESICO).</p>\n\n      <h3>How RESICO Works</h3>\n      <p>Under RESICO, eligible individuals earning up to 3.5 million pesos annually (roughly $190,000 USD) pay a progressive flat income tax rate ranging between just <strong>1.0% and 2.5%</strong> on gross revenue, eliminating the need for complicated itemized deductions.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Securing your RFC and e.firma (electronic digital signature) is the single most empowering legal step an expat can take in Mexico.”</p>\n      </blockquote>\n\n      <h3>Key Rules & Restrictions</h3>\n      <p>Not everyone qualifies for RESICO. Those with passive capital dividends from foreign corporations or partners in Mexican Sociedades Anónimas must file under standard general tax regimes. Working with a bilingual certified public accountant (CPA) familiar with both SAT and IRS foreign tax credit provisions (Form 1116 / 2555) is vital.</p>\n    ",
+    "relatedIds": [
+      "americans-moving-to-mexico",
+      "fideicomiso-property-guide"
+    ]
+  },
+  "fideicomiso-property-guide": {
+    "id": "fideicomiso-property-guide",
+    "category": "EXPAT LIFE",
+    "categoryClass": "expat",
+    "tag": "Real Estate Legalities",
+    "pillar": "People",
+    "title": "Buying Coastal Real Estate in Mexico: Demystifying the 50-Year Fideicomiso Trust",
+    "subtitle": "Everything foreigners need to know about Article 27 of the Constitution and secure bank property trusts.",
+    "author": "Notario Lic. Gerardo Morales",
+    "authorRole": "Real Estate Law Analyst",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_caribbean.jpg",
+    "imageCaption": "Oceanfront villa along the Mayan Riviera held securely under a Mexican bank fideicomiso trust.",
+    "lead": "One of the most persistent myths among foreign buyers is that 'non-citizens cannot own land near the ocean in Mexico.' The truth is that the Fideicomiso trust provides ironclad, bank-guaranteed ownership rights.",
+    "body": "\n      <p class=\"drop-cap\">Under Article 27 of the Mexican Constitution, the <strong>Restricted Zone</strong> is defined as any land within 50 kilometers (31 miles) of the coast or 100 kilometers (62 miles) of international borders. Foreigners may own inland property directly in fee simple, but coastal properties require a <em>Fideicomiso</em>.</p>\n\n      <h3>What is a Fideicomiso?</h3>\n      <p>A Fideicomiso is a 50-year renewable bank trust where an authorized Mexican financial institution (such as BBVA, Santander, or Banorte) acts as the trustee, holding nominal legal title on behalf of the foreign beneficiary. You hold 100% of the beneficial rights: you can sell, lease, remodel, bequeath to heirs, or mortgage the property at will.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“The bank cannot encumber or seize the property; it exists solely as the vehicle ensuring constitutional compliance for international owners.”</p>\n      </blockquote>\n\n      <p>The trust is automatically renewable for successive 50-year periods upon payment of standard bank maintenance fees, providing generations of security for homeowners along the Pacific, Gulf, and Caribbean coasts.</p>\n    ",
+    "relatedIds": [
+      "resico-taxes-for-expats",
+      "americans-moving-to-mexico"
+    ]
+  },
+  "manila-galleon-maritime-route": {
+    "id": "manila-galleon-maritime-route",
+    "category": "HISTORY",
+    "categoryClass": "history",
+    "tag": "Maritime Chronicles",
+    "pillar": "The Real Mexico",
+    "title": "The Silver Highway: How Acapulco & the Manila Galleon Created the First Global Economy",
+    "subtitle": "For 250 years, colossal wooden galleons bridged Asia and Europe through the heart of New Spain.",
+    "author": "Dr. Santiago Villaseñor",
+    "authorRole": "Maritime Historian & Author",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "6 min read",
+    "image": "assets/images/mex_ahoy_logo_vertical.jpg",
+    "imageCaption": "A historic 17th-century navigational chart showing the Pacific trade route from Manila to Acapulco.",
+    "lead": "Long before container shipping or modern currency exchanges, the treacherous 14,000-mile Pacific voyage of the Nao de China united silk weavers in Canton, spice traders in the Moluccas, and silver miners in Zacatecas.",
+    "body": "\n      <p class=\"drop-cap\">Every autumn between 1565 and 1815, lookout bells rang from the stone ramparts of the Fort of San Diego in Acapulco. On the horizon appeared the battered white sails of the <em>Galeón de Manila</em>, having survived up to six harrowing months traversing the stormy North Pacific gyre from the Philippines.</p>\n\n      <p>In its cavernous holds rested an emperor's ransom: crates of delicate blue-and-white Ming porcelain, bolts of shimmering Chinese silk, chests of Ceylon cinnamon and Moluccan cloves, ivory carvings, and Japanese folding screens (<em>biombos</em>).</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Acapulco was the turnstile of global capitalism. Asian merchants demanded only one thing in return: pure, unadulterated Mexican silver eight-real coins (Reales de a Ocho).”</p>\n      </blockquote>\n\n      <h3>How Asia Transformed Mexican Culture</h3>\n      <p>The trade left an indelible mark on Mexican identity: the iconic Puebla Talavera ceramic glaze was born from potters imitating Chinese porcelain; the traditional <em>rebozo</em> shawl was influenced by Filipina textiles; and mango varieties like the sweet <em>Manila</em> took root in the tropical soils of Veracruz.</p>\n    ",
+    "relatedIds": [
+      "chichimeca-war-frontier",
+      "editor-worth-understanding"
+    ]
+  },
+  "chichimeca-war-frontier": {
+    "id": "chichimeca-war-frontier",
+    "category": "HISTORY",
+    "categoryClass": "history",
+    "tag": "Colonial Frontier",
+    "pillar": "Places",
+    "title": "The Silver Frontier: The 50-Year War That Built the Colonial Heart of the Bajío",
+    "subtitle": "How fierce indigenous resistance shaped the fortified silver roads from Zacatecas to Mexico City.",
+    "author": "Valeria Montemayor",
+    "authorRole": "Colonial History Specialist",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/article_san_miguel.jpg",
+    "imageCaption": "The historic silver route (Camino Real de Tierra Adentro) weaving through the Bajío highlands.",
+    "lead": "When the richest silver veins on Earth were struck in Zacatecas and Guanajuato, the Spanish crown faced an adversary they could not defeat by force: the nomadic Chichimeca confederations of the northern plateau.",
+    "body": "\n      <p class=\"drop-cap\">Unlike the centralized Aztec empire, which fell within two years, the semi-nomadic Chichimeca nations (Guachichiles, Zacatecos, and Pames) had no emperors to capture or capitals to besiege. For half a century (1550–1600), they waged a devastating guerrilla campaign along the <em>Camino Real de Tierra Adentro</em>.</p>\n\n      <p>To protect silver mule trains, the viceroyalty was forced to construct a chain of fortified garrison towns that today form Mexico’s most celebrated colonial tourist corridor: San Miguel de Allende, Celaya, Aguascalientes, and Lagos de Moreno.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Peace was ultimately won not by cavalry swords, but by diplomacy and food: the famous 'Peace by Purchase' negotiated by Mestizo captain Miguel Caldera.”</p>\n      </blockquote>\n    ",
+    "relatedIds": [
+      "manila-galleon-maritime-route",
+      "americans-moving-to-mexico"
+    ]
+  },
+  "editor-worth-understanding": {
+    "id": "editor-worth-understanding",
+    "category": "THE EDITOR'S DESK",
+    "categoryClass": "editorial",
+    "tag": "Editorial Note",
+    "pillar": "The Real Mexico",
+    "title": "A Mexico Worth Understanding",
+    "subtitle": "Why we launched Mex-Ahoy! as an independent compass for curious minds.",
+    "author": "Ricardo Castillo",
+    "authorRole": "Founder & Editor-in-Chief",
+    "date": "October 8, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "3 min read",
+    "image": "assets/images/mex_ahoy_logo_vertical.jpg",
+    "imageCaption": "Mex-Ahoy! official emblem: The helm of independent exploration.",
+    "lead": "Every week, we bring you clear, thoughtful and insightful stories about the Mexico that matters — its people, its cultures, its opportunities and its challenges. Our goal is simple: to help you understand a complex and fascinating country.",
+    "body": "\n      <p class=\"drop-cap\">Welcome to the inaugural issue of <strong>Mex-Ahoy!</strong>. For years, international coverage of Mexico has swung between two simplistic extremes: sensationalist headlines focused solely on border turbulence, or glossy resort brochures that reduce a nation of 130 million people to margaritas on a white-sand beach.</p>\n\n      <p>We created this weekly newspaper because we believe the reality of Mexico is infinitely richer, more nuanced, and vastly more captivating than either cliché allows. Whether you are an expatriate making your home here, an investor tracking North American industrial realignments, or simply an inquisitive traveler who has fallen under this country’s magnetic spell, you deserve journalism that treats Mexico with intelligence and respect.</p>\n\n      <blockquote class=\"newspaper-quote\">\n        <p>“Mex-Ahoy! is your weekly compass. We look into the politics, the neighborhoods, the artisan workshops, and the culinary kitchens that define the soul of Mexico.”</p>\n      </blockquote>\n\n      <p>Our editorial charter rests on three cardinal principles: <em>clarity without condescension</em>, <em>cultural immersion with critical honesty</em>, and <em>practical utility for everyday life</em>. Every Thursday morning, expect sharp political analysis, reliable guidance on visas, legalities and living costs, evocative travel dispatches, and culinary investigations that go deep into Mexico’s terroirs.</p>\n\n      <p>Thank you for boarding this voyage with us. Grab a warm cup of Chiapas coffee or a fresh pan dulce, and enjoy Volume 1, Number 1 of Mex-Ahoy!.</p>\n    ",
+    "relatedIds": [
+      "what-comes-after-claudia",
+      "mexico-beyond-tourist-trail"
+    ]
   }
 };
 
-// Section descriptions for category exploration pages
 const CATEGORY_METADATA = {
   'politics': {
     title: 'Politics & Governance',
