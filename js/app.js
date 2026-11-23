@@ -3,6 +3,13 @@
  * Client application script
  */
 
+// --- Google Analytics 4 Event Helper ---
+function trackAnalyticsEvent(eventName, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   await loadArticlesData();
   initModals();
@@ -242,6 +249,13 @@ function loadArticleIntoReader(articleId) {
 
   openModal('article-modal');
   window.location.hash = article.id;
+
+  trackAnalyticsEvent('article_view', {
+    article_id: article.id,
+    article_title: article.title,
+    article_category: article.category,
+    article_author: article.author || 'Unknown'
+  });
 }
 
 window.copyArticleLink = function(id) {
@@ -256,6 +270,11 @@ window.copyArticleLink = function(id) {
 window.shareSocial = function(platform, title) {
   const url = encodeURIComponent(window.location.href);
   const text = encodeURIComponent(`Reading Mex-Ahoy!: "${title}"`);
+  trackAnalyticsEvent('share', {
+    method: platform,
+    content_type: 'article',
+    item_id: title
+  });
   if (platform === 'twitter') {
     window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
   } else if (platform === 'whatsapp') {
@@ -380,6 +399,11 @@ function showCategoryHub(slug) {
   hubView.classList.add('active');
   window.scrollTo({ top: 120, behavior: 'smooth' });
   window.location.hash = slug;
+
+  trackAnalyticsEvent('category_view', {
+    category_slug: slug,
+    category_title: meta.title
+  });
 }
 
 window.showFrontPage = function() {
@@ -496,7 +520,7 @@ window.selectRegion = function(regionKey) {
   if (region.sampleArticleId) {
     loadArticleIntoReader(region.sampleArticleId);
   } else {
-    showToast(`Exploring ${region.name}. Check our weekly regional features!`);
+    showToast(`Exploring ${region.name}. Check our regional features!`);
   }
 };
 
@@ -625,6 +649,10 @@ function initNewsletter() {
         if (typeof window.subscribeToMexAhoy === 'function') {
           await window.subscribeToMexAhoy(email, 'frontpage_newsletter');
         }
+
+        trackAnalyticsEvent('newsletter_subscribe', {
+          source: 'frontpage_newsletter'
+        });
 
         showToast(`¡Gracias! ${email} is now subscribed to Mex-Ahoy!`);
         input.value = '';

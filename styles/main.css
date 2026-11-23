@@ -103,6 +103,49 @@ button {
   }
 }
 
+/* --- Special Announcement Banner (Coming Soon 2027) --- */
+.coming-soon-banner {
+  background: linear-gradient(90deg, var(--color-green-dark) 0%, var(--color-green-forest) 50%, var(--color-green-dark) 100%);
+  color: #faf6ee;
+  border-top: 2px solid var(--color-gold);
+  border-bottom: 2px solid var(--color-gold);
+  padding: 11px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-subtle);
+}
+
+.coming-soon-text {
+  font-family: var(--font-serif-headline);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.coming-soon-accent {
+  color: var(--color-gold);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+@media (max-width: 540px) {
+  .coming-soon-banner {
+    padding: 9px 12px;
+    gap: 8px;
+  }
+  .coming-soon-text {
+    font-size: 0.98rem;
+    letter-spacing: 1.2px;
+  }
+}
+
 /* --- Live Market & Weather Ticker Bar --- */
 .ticker-bar {
   display: flex;
@@ -1752,6 +1795,7 @@ button {
     padding: 0;
     margin: 0;
   }
+  .coming-soon-banner,
   .ticker-bar,
   .navbar-primary,
   .interactive-banner,
