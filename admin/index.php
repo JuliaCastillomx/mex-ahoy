@@ -7,7 +7,7 @@
 session_start();
 
 // --- CONFIGURACIÓN DE SEGURIDAD ---
-define('ADMIN_PASSWORD', 'mexahoy2026');
+define('ADMIN_PASSWORD', 'Paulino1942');
 
 $dataFile   = __DIR__ . '/../data/articles.json';
 $jsDataFile = __DIR__ . '/../js/articles-data.js';
@@ -133,9 +133,13 @@ if (!$isLogged) {
       <div class="form-group">
         <label for="login_pass">Contraseña:</label>
         <input type="password" id="login_pass" name="login_pass" required autofocus placeholder="Escriba su contraseña...">
+        <label style="display:flex; align-items:center; gap:8px; margin-top:10px; font-weight:normal; font-size:16px; color:#4b5550; cursor:pointer;">
+          <input type="checkbox" style="width:19px; height:19px;" onchange="document.getElementById('login_pass').type = this.checked ? 'text' : 'password';">
+          <span>👁️ Mostrar contraseña mientras escribo</span>
+        </label>
       </div>
       <button type="submit" class="btn-submit">Entrar a la Redacción ➔</button>
-      <div class="hint-pwd">Contraseña predeterminada: <strong>mexahoy2026</strong></div>
+      <div class="hint-pwd">Acceso privado para Don Ricardo Castillo y la redacción de Mex-Ahoy!</div>
     </form>
   </div>
 </body>
