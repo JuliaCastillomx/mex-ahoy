@@ -1,8 +1,4 @@
-/**
- * Mex-Ahoy! - Full Editorial Content Database
- * Auto-updated with 7 current Politics Dispatches (November 4, 2026)
- */
-
+// Mex-Ahoy! Editorial Database (Auto-generado desde el Panel Editorial)
 const ARTICLES = {
   "us-ambassador-johnson-public-figure": {
     "id": "us-ambassador-johnson-public-figure",
@@ -310,6 +306,30 @@ const ARTICLES = {
       "resico-taxes-for-expats"
     ]
   },
+  "zacatecas-seven-pueblos-magicos-tampico-2026": {
+    "id": "zacatecas-seven-pueblos-magicos-tampico-2026",
+    "category": "TRAVEL",
+    "categoryClass": "travel",
+    "tag": "TRAVEL • PUEBLOS MÁGICOS & HERITAGE",
+    "pillar": "Places",
+    "title": "Zacatecas Brings Its Seven Pueblos Mágicos to the 25th National Gathering in Tampico",
+    "subtitle": "From mezcal distilleries in Teúl and saddle makers in Nochistlán to silver-era streets in Sombrerete and Pinos, Zacatecas presents four standout heritage towns at the November 26 to 29 tourism fair.",
+    "author": "Mex-Ahoy! Editorial Desk",
+    "authorRole": "Travel & Regional Heritage",
+    "date": "November 26, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "5 min read",
+    "image": "assets/images/travel_zacatecas_pueblos_magicos.jpg",
+    "imageCaption": "Colonial cantera-stone architecture, cobblestone lanes, and the Sierra de Órganos rock formations reflect the heritage of Zacatecas’s Pueblos Mágicos.",
+    "lead": "With seven federally designated Pueblos Mágicos spanning colonial quarry-stone towns, silver-mining history, and regional mezcal routes, Zacatecas heads to Tampico from November 26 to 29 for the 25th National Gathering of Pueblos Mágicos.",
+    "body": "\n      <p class=\"drop-cap\">ZACATECAS: With colonial quarry-stone (<em>cantera</em>) architecture, mining plazas, archaeological sites, and regional kitchens, Zacatecas enters the 25th National Gathering of Pueblos Mágicos (the updated format of the Tianguis Nacional de Pueblos Mágicos) with seven federally recognized heritage towns. The federal Tourism Secretariat (Sectur) granted the state its first Pueblo Mágico title in 2007 to Jerez de García Salinas, and added Villanueva as its seventh on June 2, 2023.</p>\n\n      <p>During the November 26 to 29 event in Tampico, Tamaulipas (the main commercial and promotional platform for Mexico’s Pueblos Mágicos program), Zacatecas tourism officials are focusing attention on four destinations across the state.</p>\n\n      <h3>Nochistlán de Mejía</h3>\n      <p>Ringed by hills covered in prickly-pear cacti (<em>nopales</em>) and cochineal, Nochistlán de Mejía is known for its traditional architecture and the afternoon music of the <em>jaraberos</em> (local ensembles dedicated to keeping traditional <em>jarabe</em> music and dance alive in Jardín Morelos).</p>\n\n      <p>Leatherworkers in town produce saddles, saddle pads (<em>suaderos</em>), embroidered <em>piteado</em> belts, knife sheaths, and saddle trees. Inside the Municipal Market, visitors find regional sweets, folk art, birria, <em>gorditas lloronas</em>, <em>pollo a la Valentina</em>, <em>revuelto de nieve</em>, craft beers, and salsas made with denomination-of-origin Chile Yahualica. Other stops include the Parish of San Francisco de Asís, the Caxcana Ceramics Museum, the Municipal Palace, hiking and birding trails, kayaking at Presa Las Tuzas, and temazcal baths at the Itzia Tlachinolli Relaxation Center.</p>\n\n      <h3>Teúl de González Ortega</h3>\n      <p>In southern Zacatecas, Teúl de González Ortega pairs cobblestone streets, carved quarry-stone walls, gargoyles, and old manor houses with a deep mezcal tradition. Fertile blue-agave fields surround the town, and visitors can tour local distilleries such as Don Aurelio to see the production process and taste blanco, reposado, and añejo varieties alongside coconut, coffee, and passion-fruit agave creams.</p>\n\n      <p>Local craft workshops include Antonio Larios’s traditional pottery studio and the woodcarving workshop of Don Cruz Manuel Jacobo Doñate, who carves pine and copal masks worn by the dancers known as “los morenos” during the Santa Cruz patron festival in Barrio del Rosario. Travelers also ride <em>trajinera</em> boats on Presa La Ticuata, walk the Cerro de Teúl archaeological site in the Tlaltenango Valley, and stop at the municipal market for milk candies, cajeta, tamarind sweets, rice cake with <em>piloncillo</em>, and <em>taninole</em> (candied squash cooked with milk).</p>\n\n      <h3>Sombrerete</h3>\n      <p>Shaped by its silver-mining era in New Spain, Sombrerete draws year-end visitors with winding colonial streets broken up by small plazas and gardens. Just outside town rises the Sierra de Órganos, whose rock formations have served as a filming location for decades. In town, visitors explore an old military fort converted into a lookout point, the Villa de Llerena Museum, La Cava del Estudiante, and the nearby ghost mining town of Noria de San Pantaleón (home to a well-known chapel dedicated to Santa Muerte).</p>\n\n      <p>Local cooking centers on lamb and goat birria alongside <em>pan ranchero</em>, a lard bread baked in adobe, brick, and mud ovens that was once reserved for Holy Week and is now sold year-round. Another local staple is “brujitas,” nixtamalized corn turnovers seasoned with garlic and salt, fried, and filled with shredded meat, beans, or potatoes with cheese, typically served with fresh salad and pickled chili salsa.</p>\n\n      <h3>Pinos</h3>\n      <p>Located 125 kilometers southeast of Zacatecas’s state capital along the historic Camino Real de Tierra Adentro, Pinos joined the Pueblo Mágico program on October 31, 2012, and holds UNESCO World Heritage recognition. Originally settled by the Huachichil people (whose name means “red head”), the town preserves gold and silver mining haciendas, cobblestone lanes, and family workshops making traditional red-clay jars (<em>jarritos de barro</em>).</p>\n\n      <p>Notable sites include the Sierra de Pinos, an underground passage, the Sacred Art Museum, Hacienda La Pendencia, the IV Centenario Community Museum, the Parish of San Matías, the Church of San Francisco, the Temple of Tlaxcalilta (known for its Churrigueresque altarpiece), the Los Arquitos Aqueduct, and the annual Festival of the Lanterns every December 8.</p>\n\n      <p>Pinos also anchors a regional Mezcal Route through historic estates including Saldaña, the former Hacienda Trinidad Norte, and the La Pendencia mezcal distillery. At local tables, regional specialties include rabbit in pinole mole, prickly-pear cheese (<em>queso de tuna</em>), pulled taffy (<em>melcocha</em>), and pulque. Together, these four towns offer a close look at the history, crafts, and kitchens that define Zacatecas’s seven Pueblos Mágicos.</p>\n    ",
+    "editorialStatus": "done",
+    "relatedIds": [
+      "gran-acuario-mazatlan-best-tourism-product",
+      "mexico-beyond-tourist-trail",
+      "copper-canyon-chepe-train"
+    ]
+  },
   "gran-acuario-mazatlan-best-tourism-product": {
     "id": "gran-acuario-mazatlan-best-tourism-product",
     "category": "TRAVEL",
@@ -579,113 +599,3 @@ const ARTICLES = {
   }
 };
 
-const CATEGORY_METADATA = {
-  'politics': {
-    title: 'Politics & Governance',
-    subtitle: 'Deep geopolitical analysis, presidential policy, federal reforms, and bilateral trade affairs.',
-    categoryKey: 'POLITICS'
-  },
-  'culture': {
-    title: 'Culture & Traditions',
-    subtitle: 'Living indigenous arts, ancestral festivals, craft cooperatives, and folkloric heritage.',
-    categoryKey: 'CULTURE & TRADITIONS'
-  },
-  'living': {
-    title: 'Living in Mexico',
-    subtitle: 'Visas, cost of living, urban neighborhoods, schooling, and day-to-day community life.',
-    categoryKey: 'LIVING IN MEXICO'
-  },
-  'travel': {
-    title: 'Travel & Expeditions',
-    subtitle: 'Hidden coastal gems, mountain railway odysseys, biosphere sanctuaries, and historic towns.',
-    categoryKey: 'TRAVEL'
-  },
-  'food': {
-    title: 'Food & Drink',
-    subtitle: 'Ancestral agaves, the seven moles of Oaxaca, tianguis gastronomy, and culinary terroirs.',
-    categoryKey: 'FOOD & DRINK'
-  },
-  'opinion': {
-    title: 'Opinion & Editorial',
-    subtitle: 'Provocative perspectives, economic columnists, and civil society debates on Mexico’s future.',
-    categoryKey: 'OPINION'
-  },
-  'expat': {
-    title: 'Expat Life & Legalities',
-    subtitle: 'Real estate trusts (Fideicomisos), tax frameworks (RESICO), healthcare systems, and retirement.',
-    categoryKey: 'EXPAT LIFE'
-  },
-  'history': {
-    title: 'History & Chronicles',
-    subtitle: 'The maritime trade routes, colonial silver frontiers, pre-Hispanic cosmology, and lost archives.',
-    categoryKey: 'HISTORY'
-  }
-};
-
-// Past editions archive data
-const PAST_EDITIONS = [
-  {
-    volume: 'Vol. 1',
-    number: 'No. 01',
-    date: 'October 8, 2026',
-    headline: 'What Comes After Claudia?',
-    coverStory: 'As the first woman president reshapes Mexico, attention turns to what happens next.',
-    isCurrent: true
-  },
-  {
-    volume: 'Vol. 1',
-    number: 'No. 00 (Inaugural Pilot)',
-    date: 'September 24, 2026',
-    headline: 'The New Expat Wave in Mexico City',
-    coverStory: 'How remote work, creative industries and culinary renown transformed the capital.',
-    isCurrent: false
-  },
-  {
-    volume: 'Special Edition',
-    number: 'Fall 2026',
-    date: 'September 15, 2026',
-    headline: 'The Mezcal & Agave Heritage Report',
-    coverStory: 'From ancestral palenques in Oaxaca to high-altitude Jalisco distilleries.',
-    isCurrent: false
-  }
-];
-
-// Region data for interactive Mexico map explorer
-const MEXICO_REGIONS = {
-  north: {
-    name: 'Northern Frontier & Deserts',
-    states: ['Baja California', 'Baja California Sur', 'Sonora', 'Chihuahua', 'Coahuila', 'Nuevo León', 'Tamaulipas'],
-    highlights: 'Nearshoring capital Monterrey, Valle de Guadalupe wine country, Copper Canyon rail journeys, and desert ecosystems.',
-    sampleArticleId: 'copper-canyon-chepe-train'
-  },
-  bajio: {
-    name: 'Colonial Bajío & Heartland',
-    states: ['Guanajuato', 'Querétaro', 'San Miguel de Allende', 'Aguascalientes', 'Zacatecas', 'San Luis Potosí'],
-    highlights: 'Historic UNESCO World Heritage cities, silver mining towns, wine & cheese routes, and vibrant expatriate communities.',
-    sampleArticleId: 'americans-moving-to-mexico'
-  },
-  central: {
-    name: 'Central Valley & CDMX',
-    states: ['Mexico City (CDMX)', 'Estado de México', 'Puebla', 'Morelos', 'Tlaxcala', 'Hidalgo'],
-    highlights: 'The vibrant megalopolis of CDMX, culinary capital Puebla, ancient Teotihuacán pyramids, and colonial valleys.',
-    sampleArticleId: 'what-comes-after-claudia'
-  },
-  pacific: {
-    name: 'Pacific Coast & West',
-    states: ['Jalisco', 'Nayarit', 'Colima', 'Michoacán', 'Sinaloa', 'Guerrero'],
-    highlights: 'Mazatlán’s award-winning Gran Acuario, Guadalajara and the Tequila valleys, Riviera Nayarit surf breaks, and Day of the Dead traditions.',
-    sampleArticleId: 'gran-acuario-mazatlan-best-tourism-product'
-  },
-  south: {
-    name: 'Oaxaca & Southern Highlands',
-    states: ['Oaxaca', 'Chiapas', 'Veracruz', 'Tabasco'],
-    highlights: 'Ancestral indigenous weaving, world-renowned mole & mezcal, Sumidero Canyon, and coffee cloud forests.',
-    sampleArticleId: 'mezcal-renaissance-oaxaca'
-  },
-  yucatan: {
-    name: 'Yucatán Peninsula & Caribbean',
-    states: ['Quintana Roo', 'Yucatán', 'Campeche'],
-    highlights: 'Mayan archaeological ruins, turquoise Caribbean shores, cenotes, Mérida architecture, and Sian Ka’an biosphere.',
-    sampleArticleId: 'hidden-gems-caribbean-coast'
-  }
-};
