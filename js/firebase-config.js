@@ -218,8 +218,14 @@ window.fetchFirestoreArticles = async function() {
 
     const map = {};
     const parsed = data.documents.map(parseFirestoreDoc).filter(Boolean);
-    // Put hero article first if marked
-    parsed.sort((a, b) => (b.isHero ? 1 : 0) - (a.isHero ? 1 : 0));
+    // Put hero article first if marked, then respect editorial sortOrder
+    parsed.sort((a, b) => {
+      const heroDiff = (b.isHero ? 1 : 0) - (a.isHero ? 1 : 0);
+      if (heroDiff !== 0) return heroDiff;
+      const orderA = typeof a.sortOrder === 'number' ? a.sortOrder : 9999;
+      const orderB = typeof b.sortOrder === 'number' ? b.sortOrder : 9999;
+      return orderA - orderB;
+    });
     for (const art of parsed) {
       if (art.id) {
         delete art._docId;
@@ -229,5 +235,30 @@ window.fetchFirestoreArticles = async function() {
     return map;
   } catch (e) {
     return null;
+  }
+};
+
+/**
+ * Sync ordered article positions to Firebase Firestore
+ */
+window.syncArticlesOrderToFirestore = async function(orderedIds = []) {
+  if (!Array.isArray(orderedIds) || orderedIds.length === 0) return false;
+  try {
+    await Promise.all(orderedIds.map((id, idx) => {
+      const url = `${FIRESTORE_BASE_URL}/articles/${encodeURIComponent(id)}?updateMask.fieldPaths=sortOrder&updateMask.fieldPaths=isHero&key=${MEX_AHOY_FIREBASE_CONFIG.apiKey}`;
+      return fetch(url, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fields: {
+            sortOrder: { integerValue: String(idx) },
+            isHero: { booleanValue: idx === 0 }
+          }
+        })
+      }).catch(() => null);
+    }));
+    return true;
+  } catch (e) {
+    return false;
   }
 };
