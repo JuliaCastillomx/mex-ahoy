@@ -26,10 +26,9 @@ export const MEX_AHOY_EDITORIAL_CONFIG = {
     }
   ],
 
-  // Opcional: pega aquí tu Site Key de reCAPTCHA Enterprise / v3 cuando actives
-  // Firebase App Check en la consola de Firebase para blindar la cuota.
-  appCheckSiteKey: '',
-  appCheckProvider: 'enterprise', // 'enterprise' o 'v3'
+  // Firebase App Check (reCAPTCHA v3) — clave pública de sitio para proteger la cuota
+  appCheckSiteKey: '6LfRjTQuAAAAAOErIFjkDBMuzRHqtbQ7F6sEy0_8',
+  appCheckProvider: 'v3',
 
   /**
    * Lista de palabras y expresiones cliché de IA en inglés (WP:AISIGNS).

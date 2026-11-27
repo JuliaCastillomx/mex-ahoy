@@ -11,10 +11,11 @@
 
 import { initializeApp, getApps, getApp } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-ai.js';
-import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js';
+import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js?v=20261126d';
 
 let firebaseAppInstance = null;
 let aiInstance = null;
+let appCheckInstance = null;
 let appCheckInitialized = false;
 
 function getSelectedModelId() {
@@ -46,13 +47,15 @@ async function ensureFirebaseAI() {
       const ProviderClass = MEX_AHOY_EDITORIAL_CONFIG.appCheckProvider === 'v3'
         ? appCheckMod.ReCaptchaV3Provider
         : appCheckMod.ReCaptchaEnterpriseProvider;
-      appCheckMod.initializeAppCheck(firebaseAppInstance, {
+      appCheckInstance = appCheckMod.initializeAppCheck(firebaseAppInstance, {
         provider: new ProviderClass(MEX_AHOY_EDITORIAL_CONFIG.appCheckSiteKey),
         isTokenAutoRefreshEnabled: true
       });
       appCheckInitialized = true;
+      // Esperar brevemente el primer token de App Check antes de llamar a Gemini
+      await appCheckMod.getToken(appCheckInstance, false);
     } catch (err) {
-      console.warn('App Check initialization skipped:', err);
+      console.warn('App Check initialization warning:', err);
     }
   }
 

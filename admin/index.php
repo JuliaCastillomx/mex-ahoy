@@ -935,8 +935,8 @@ $initialArticlesList = array_values($articlesData['articles']);
     </div>
   </header>
 
-  <script src="../js/firebase-config.js?v=20261126c"></script>
-  <script type="module" src="editorial-assistant.js?v=20261126c"></script>
+  <script src="../js/firebase-config.js?v=20261126d"></script>
+  <script type="module" src="editorial-assistant.js?v=20261126d"></script>
 
   <div class="main-wrap">
 
