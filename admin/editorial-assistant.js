@@ -30,13 +30,14 @@ function setSelectedModelId(modelId) {
 async function ensureFirebaseAI() {
   if (aiInstance) return aiInstance;
 
-  if (typeof window.MEX_AHOY_FIREBASE_CONFIG === 'undefined') {
+  const fbConfig = window.MEX_AHOY_FIREBASE_CONFIG || (typeof MEX_AHOY_FIREBASE_CONFIG !== 'undefined' ? MEX_AHOY_FIREBASE_CONFIG : null);
+  if (!fbConfig) {
     throw new Error('No se encontró la configuración de Firebase (js/firebase-config.js).');
   }
 
   firebaseAppInstance = getApps().length > 0
     ? getApp()
-    : initializeApp(window.MEX_AHOY_FIREBASE_CONFIG);
+    : initializeApp(fbConfig);
 
   // Activar App Check automáticamente si Julia configuró su Site Key en editorial-rules.js
   if (!appCheckInitialized && MEX_AHOY_EDITORIAL_CONFIG.appCheckSiteKey) {

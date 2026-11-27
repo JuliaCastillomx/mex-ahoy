@@ -13,6 +13,7 @@ const MEX_AHOY_FIREBASE_CONFIG = {
   appId: "1:377653714683:web:62c03456301aafaa051a5e",
   measurementId: "G-B64CT8FCF4"
 };
+window.MEX_AHOY_FIREBASE_CONFIG = MEX_AHOY_FIREBASE_CONFIG;
 
 const FIRESTORE_BASE_URL = `https://firestore.googleapis.com/v1/projects/${MEX_AHOY_FIREBASE_CONFIG.projectId}/databases/(default)/documents`;
 
