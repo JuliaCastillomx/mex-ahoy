@@ -11,7 +11,7 @@
 
 import { initializeApp, getApps, getApp } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-ai.js';
-import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js?v=20261126e';
+import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js?v=20261126f';
 
 let firebaseAppInstance = null;
 let aiInstance = null;
@@ -148,27 +148,41 @@ export async function askArticleAssistant({
   ].join('\n');
 
   const taskPrompts = {
-    historical: `Investiga el CONTEXTO HISTÓRICO real y verificable relacionado con este artículo en particular (fechas exactas, antecedentes en México o en la relación bilateral, reformas o leyes históricas relevantes).
-1) Primero presenta un resumen claro y breve en español para Don Ricardo (máximo 2-3 párrafos cortos con fechas y datos exactos).
-2) Después incluye el bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN === con 1 o 2 párrafos breves en inglés periodístico natural listos para añadir al artículo, respetando TODAS las reglas Anti-IA y CERO guiones largos o medios.`,
+    historical: `Prepara una FICHA DE INVESTIGACIÓN DE CONTEXTO HISTÓRICO en español claro y conciso para que Don Ricardo la lea y forme su propio criterio sobre este artículo.
+REGLAS ESTRICTAS:
+- NO redactes un artículo, NO escribas párrafos listos para publicar y NO incluyas el bloque === TEXTO LISTO PARA INSERTAR ===.
+- Entrega únicamente material de referencia para pensar:
+  1. Antecedentes históricos clave (con años y fechas exactas).
+  2. Precedentes, leyes, tratados o episodios pasados relevantes en México o en la relación bilateral.
+  3. Qué conexión histórica conviene tener presente al analizar el tema actual.
+- Sé directo, factual, sin relleno ni opiniones prefabricadas.`,
 
-    political: `Investiga el CONTEXTO POLÍTICO ACTUAL relacionado con este artículo en particular (actores involucrados, partidos políticos, postura de Palacio Nacional, Congreso o Washington, e implicaciones concretas).
-1) Primero presenta un análisis directo y claro en español para Don Ricardo (con nombres propios y fuentes verificadas, sin especulaciones vagas).
-2) Después incluye el bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN === con 1 o 2 párrafos en inglés periodístico natural listos para añadir al artículo, respetando TODAS las reglas Anti-IA y CERO guiones.`,
+    political: `Prepara una FICHA DE CONTEXTO POLÍTICO ACTUAL en español claro y conciso para que Don Ricardo analice el panorama por sí mismo.
+REGLAS ESTRICTAS:
+- NO redactes un artículo, NO escribas párrafos listos para publicar y NO incluyas el bloque === TEXTO LISTO PARA INSERTAR ===.
+- Entrega únicamente material de consulta:
+  1. Actores clave involucrados (nombres propios, cargos y partido o institución).
+  2. Postura actual de cada lado (Presidencia, Congreso, oposición, gobiernos estatales o Washington, según corresponda).
+  3. Qué está en juego políticamente y qué puntos de tensión conviene observar.
+- Usa solo hechos y fuentes verificables, sin atribución vaga.`,
 
-    facts: `Verifica los DATOS, FECHAS, CIFRAS, CARGOS OFICIALES Y MARCO LEGAL que aparecen o faltan en este artículo usando búsqueda en Google.
-1) Presenta a Don Ricardo en español una lista muy clara de datos verificados y, si detectas algún error o dato que conviene confirmar, avísale con respeto.
-2) Incluye el bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN === con un breve párrafo factual de contexto en inglés (sin guiones ni clichés de IA) si aporta valor al artículo.`,
+    facts: `Prepara una HOJA DE VERIFICACIÓN DE DATOS Y FECHAS en español claro para Don Ricardo usando búsqueda en Google.
+REGLAS ESTRICTAS:
+- NO redactes un artículo ni párrafos listos para publicar, y NO incluyas el bloque === TEXTO LISTO PARA INSERTAR ===.
+- Entrega únicamente una lista clara y ordenada de:
+  1. Fechas exactas y cronología confirmada.
+  2. Cifras oficiales, nombres propios, cargos y artículos de ley verificados.
+  3. Si algún dato del borrador parece inexacto o conviene confirmarlo, indícalo con respeto.`,
 
-    polish: `Revisa y pule la redacción en INGLÉS del borrador actual de Don Ricardo (o tradúcelo al inglés periodístico natural si hay partes escritas en español).
+    polish: `Revisa y pule la redacción en INGLÉS del borrador que escribió Don Ricardo (o tradúcelo al inglés periodístico natural si hay partes escritas en español).
 IMPORTANTE:
-- Conserva intacta la voz, el criterio y el estilo personal de Don Ricardo.
-- Corrige gramática, fluidez y elimina cualquier cliché de IA de Wikipedia.
+- Conserva intactos sus argumentos, ideas, criterio y voz personal. NO inventes contenido nuevo ni reescribas su artículo como otro autor.
+- Corrige únicamente ortografía, gramática, fluidez en inglés y elimina cualquier cliché de IA de Wikipedia.
 - CERO guiones largos (—) ni medios (–): usa solo paréntesis (...), comas o puntos.
-1) En español, explica en 2 o 3 líneas muy breves qué mejoraste.
-2) Coloca el texto pulido completo en inglés dentro del bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN ===.`,
+1) En español, explica en 2 o 3 líneas breves qué correcciones hiciste.
+2) Coloca el texto corregido en inglés dentro del bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN ===.`,
 
-    headlines: `Propón exactamente 3 titulares periodísticos excelentes en INGLÉS para este artículo de Mex-Ahoy! y 1 subtítulo (deck) breve.
+    headlines: `Propón exactamente 3 ideas breves de titular periodístico en INGLÉS para inspirar a Don Ricardo y 1 subtítulo breve.
 REGLAS ESTRICTAS PARA LOS TITULARES:
 - MUY BREVES, INGENIOSOS Y AL GRANO: máximo 4 a 8 palabras por titular (NUNCA resúmenes largos de 12-18 palabras).
 - Estilo directo de primera plana (verbos fuertes, chispa periodística cuando el tema lo permita).
@@ -182,14 +196,16 @@ SUBTITLE: ...`,
     fix_cliches: `El Detector de Clichés encontró expresiones que suenan a IA o guiones prohibidos en este artículo:
 ${userQuestion || 'Revisa clichés de IA y guiones largos.'}
 
-Reescribe ÚNICAMENTE las partes afectadas del artículo en inglés periodístico humano y natural, conservando fielmente las ideas y la voz de Don Ricardo, con CERO guiones largos/medios (usa paréntesis, comas o puntos) y CERO palabras prohibidas de Wikipedia WP:AISIGNS.
+Corrige ÚNICAMENTE las frases señaladas del artículo en inglés periodístico humano y natural, conservando fielmente las ideas y la voz de Don Ricardo, con CERO guiones largos/medios (usa paréntesis, comas o puntos) y CERO palabras prohibidas de Wikipedia WP:AISIGNS.
 1) Explica brevemente en español qué limpiaste.
-2) Entrega el cuerpo limpio completo en inglés dentro de === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN ===.`,
+2) Entrega el texto limpio en inglés dentro de === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN ===.`,
 
     custom: `Don Ricardo pregunta lo siguiente sobre este artículo en particular:
 "${userQuestion}"
 
-Responde con claridad y respeto en español (usando búsqueda en Google si requiere investigar datos históricos o políticos actualizados). Si tu respuesta incluye un párrafo o dato que le convenga agregar al periódico, inclúyelo también en inglés periodístico limpio dentro del bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN === (con CERO guiones y CERO clichés de IA).`
+REGLAS ESTRICTAS:
+- Responde directamente a su pregunta en español claro y conciso, como un investigador de redacción que le facilita datos, contexto o respuestas para que él piense y escriba por sí mismo.
+- NO redactes un artículo ni párrafos listos para publicar y NO incluyas el bloque === TEXTO LISTO PARA INSERTAR ===, A MENOS QUE Don Ricardo te haya pedido explícitamente traducir, corregir o redactar un texto.`
   };
 
   // Incluir memoria reciente de ESTE artículo (últimos 6 turnos para mantener foco sin saturar)
@@ -259,10 +275,11 @@ Responde con claridad y respeto en español (usando búsqueda en Google si requi
   }
 
   const parsed = parseAssistantOutput(finalText);
+  const isResearchOnly = ['historical', 'political', 'facts'].includes(actionType);
   return {
     rawText: finalText,
     explanation: parsed.explanation,
-    insertText: parsed.insertText,
+    insertText: isResearchOnly ? null : parsed.insertText,
     headlines: null,
     sources,
     modelUsed: modelId
