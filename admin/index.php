@@ -1355,7 +1355,7 @@ $initialArticlesList = array_values($articlesData['articles']);
           <strong>2. Pegue su artículo de Word o abra uno existente:</strong> Si escribió su texto en Word, pulse el botón azul <strong>📄 Pegar desde Word</strong> y el sistema lo acomoda limpio automáticamente.
         </div>
         <div class="card" style="padding:16px;">
-          <strong>3. Use su Asistente propio en cada artículo:</strong> A la derecha solo pulse <strong>🏛️ Contexto Histórico</strong> o <strong>🗳️ Contexto Político</strong>. El asistente busca información real en Google y redacta en inglés humano (sin clichés de IA y sin guiones largos). Si le gusta un párrafo, pulse <strong>➕ Insertar en mi artículo</strong>.
+          <strong>3. Use su Asistente propio en cada artículo:</strong> A la derecha solo pulse <strong>🏛️ Contexto Histórico</strong>, <strong>🗳️ Contexto Político</strong> o <strong>🔍 Datos y Fechas</strong>. El asistente busca información real en Google y le entrega fichas de consulta para que usted reflexione y escriba con su propia pluma.
         </div>
         <div class="card" style="padding:16px;">
           <strong>4. Revise y guarde:</strong> Pulse <strong>🔎 Detector de Clichés IA</strong> si quiere verificar el texto, luego <strong>💾 Guardar y Publicar</strong> o <strong>Guardar e ir al Siguiente ➔</strong>.
@@ -1397,7 +1397,10 @@ $initialArticlesList = array_values($articlesData['articles']);
       </div>
 
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-        <a href="https://console.firebase.google.com/project/mex-ahoy/ailogic" target="_blank" class="btn btn-soft btn-sm">🔗 Abrir Firebase AI Logic (mex-ahoy) ↗</a>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <a href="https://console.firebase.google.com/project/mex-ahoy/ailogic" target="_blank" class="btn btn-soft btn-sm">🔗 Abrir Firebase AI Logic ↗</a>
+          <button type="button" class="btn btn-danger-outline btn-sm" onclick="clearAllAssistantHistories()">🧹 Borrar todo el historial de búsquedas</button>
+        </div>
         <button type="button" class="btn btn-primary" onclick="toggleModal('settings-modal', false)">Guardar y Cerrar</button>
       </div>
     </div>
@@ -1436,12 +1439,30 @@ $initialArticlesList = array_values($articlesData['articles']);
     // INICIALIZACIÓN Y ACCESIBILIDAD
     // =========================================================================
     document.addEventListener('DOMContentLoaded', () => {
+      // Limpieza automática única del historial de pruebas previas
+      if (localStorage.getItem('mexahoy_history_reset_20261126') !== 'done') {
+        Object.keys(localStorage).forEach(k => {
+          if (k.startsWith('mexahoy_asst_hist_')) localStorage.removeItem(k);
+        });
+        localStorage.setItem('mexahoy_history_reset_20261126', 'done');
+      }
+
       const savedScale = parseFloat(localStorage.getItem('mexahoy_text_scale') || '1');
       setTextScale(savedScale, false);
       syncModelBadges();
       setupWordPasteListener();
       renderDashboard();
     });
+
+    function clearAllAssistantHistories() {
+      if (!confirm('¿Borrar el historial de consultas del asistente en todos los artículos?')) return;
+      Object.keys(localStorage).forEach(k => {
+        if (k.startsWith('mexahoy_asst_hist_')) localStorage.removeItem(k);
+      });
+      renderDashboard();
+      if (currentArticleId) renderAssistantThread();
+      showToast('🧹 Todo el historial de búsquedas quedó limpio.');
+    }
 
     function setTextScale(scale, notify = true) {
       document.documentElement.style.setProperty('--scale', scale);
