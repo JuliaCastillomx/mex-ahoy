@@ -166,9 +166,10 @@ IMPORTANTE:
 2) Coloca el texto pulido completo en inglés dentro del bloque === TEXTO LISTO PARA INSERTAR (INGLÉS) === ... === FIN ===.`,
 
     headlines: `Propón exactamente 3 titulares periodísticos excelentes en INGLÉS para este artículo de Mex-Ahoy! y 1 subtítulo (deck) breve.
-REGLAS PARA LOS TITULARES:
-- Estilo de periódico real, directo y natural (como los titulares clásicos de Don Ricardo).
-- PROHIBIDO usar guiones largos (—) o repetir la fórmula robótica de IA "Frase dramática: Cómo X transforma Y".
+REGLAS ESTRICTAS PARA LOS TITULARES:
+- MUY BREVES, INGENIOSOS Y AL GRANO: máximo 4 a 8 palabras por titular (NUNCA resúmenes largos de 12-18 palabras).
+- Estilo directo de primera plana (verbos fuertes, chispa periodística cuando el tema lo permita).
+- PROHIBIDO usar guiones largos (—), guiones medios (–) o la fórmula robótica de IA con dos puntos ("Frase dramática: Cómo X transforma Y").
 - Responde únicamente en este formato exacto para que el panel pueda mostrar botones de 1 clic:
 HEADLINE_1: ...
 HEADLINE_2: ...

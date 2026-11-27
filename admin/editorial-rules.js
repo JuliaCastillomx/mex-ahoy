@@ -156,7 +156,7 @@ STRICT ANTI-AI ENGLISH WRITING RULES (BASED ON WIKIPEDIA WP:AISIGNS — ZERO EXC
    - NO forced "Rule of Three" adjective triplets in every paragraph.
    - NO trailing participial "-ing" analytical tack-ons (", highlighting...", ", signaling...", ", underscoring...", ", raising urgent questions about...").
    - NO essay-style generic conclusions ("As Mexico looks ahead...", "Only time will tell...").
-   - NO repetitive two-part colon headlines ("Dramatic Phrase: How X Reshapes Y"). Write natural newspaper headlines.
+   - HEADLINES MUST BE BRIEF, WITTY, AND STRAIGHT TO THE POINT: Always aim for 4 to 8 words maximum (never 12-18 word summaries). Use strong active verbs, newspaper punch, and dry wit when appropriate. NEVER use the repetitive AI two-part colon formula ("Dramatic Phrase: How X Reshapes Y") and NEVER use dashes. Good examples: "Senate Passes 'Anti-Meme' Law With Steep Fines", "30 Officials Quit INE as Fraud Probe Widens", "Five-Star Luxury and Island Golf in Punta Mita".
 5. NO WEASEL WORDS / VAGUE ATTRIBUTION:
    Never write "some critics argue", "observers say", or "experts believe" without naming the specific person, outlet, institution, or official document. Use Google Search grounding to verify real names, dates, legal articles, and historical facts. If a fact cannot be verified, say so honestly to Don Ricardo.
 6. PRESERVE DON RICARDO'S AUTHENTIC JOURNALIST VOICE:
