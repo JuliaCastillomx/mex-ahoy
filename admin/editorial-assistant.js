@@ -11,7 +11,7 @@
 
 import { initializeApp, getApps, getApp } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-ai.js';
-import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js?v=20261126d';
+import { MEX_AHOY_EDITORIAL_CONFIG } from './editorial-rules.js?v=20261126e';
 
 let firebaseAppInstance = null;
 let aiInstance = null;

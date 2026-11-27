@@ -26,9 +26,9 @@ export const MEX_AHOY_EDITORIAL_CONFIG = {
     }
   ],
 
-  // Firebase App Check (reCAPTCHA v3) — clave pública de sitio para proteger la cuota
-  appCheckSiteKey: '6LfRjTQuAAAAAOErIFjkDBMuzRHqtbQ7F6sEy0_8',
-  appCheckProvider: 'v3',
+  // Firebase App Check (Fraud Defense / reCAPTCHA Enterprise) — clave pública de sitio
+  appCheckSiteKey: '6Le_TjQuAAAAALu7nkcZ3BBRvn65Fpqu8YVZp0Hl',
+  appCheckProvider: 'enterprise',
 
   /**
    * Lista de palabras y expresiones cliché de IA en inglés (WP:AISIGNS).
