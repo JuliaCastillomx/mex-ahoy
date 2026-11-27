@@ -306,6 +306,30 @@ const ARTICLES = {
       "resico-taxes-for-expats"
     ]
   },
+  "punta-mita-riviera-nayarit-luxury-golf-resorts-2026": {
+    "id": "punta-mita-riviera-nayarit-luxury-golf-resorts-2026",
+    "category": "TRAVEL",
+    "categoryClass": "travel",
+    "tag": "TRAVEL • RIVIERA NAYARIT & HOSPITALITY",
+    "pillar": "Places",
+    "title": "Punta Mita Draws International Travelers With Five-Star Resorts, Island Golf, and Private Villas",
+    "subtitle": "Backed by Forbes Five-Star and AAA Five Diamond honors, Jack Nicklaus courses, and more than 500 private residences, the Riviera Nayarit peninsula earned Vogue recognition as Mexico’s new Gold Coast in June 2026.",
+    "author": "Mex-Ahoy! Editorial Desk",
+    "authorRole": "Travel & Coastal Destinations",
+    "date": "November 26, 2026",
+    "issue": "Vol. 1 • No. 01",
+    "readTime": "4 min read",
+    "image": "assets/images/travel_punta_mita_tail_of_the_whale.jpg",
+    "imageCaption": "Sunset over Hole 3B (known as Tail of the Whale) on the Pacífico golf course, with Punta Mita’s Pacific bay and hillside villas in the background.",
+    "lead": "Set along the Pacific coast of Riviera Nayarit, Punta Mita has built an international reputation around private beachfront villas, two Jack Nicklaus golf courses, and five-star hospitality brands including Four Seasons, The St. Regis, and Naviva.",
+    "body": "\n      <p class=\"drop-cap\">PUNTA MITA, NAYARIT: Along a quiet peninsula on Mexico’s Pacific coast, Punta Mita has grown into one of the country’s premier luxury destinations. Golden-sand beaches, coastal tropical forest, and low-density development draw international travelers looking for privacy, tailored dining, and open-ocean views in Riviera Nayarit.</p>\n\n      <p>The peninsula brings together several leading international hospitality brands. Four Seasons Resort Punta Mita earned both the Forbes Travel Guide Five-Star rating and the AAA Five Diamond award in 2026. Nearby, The St. Regis Punta Mita Resort pairs oceanfront villas and butler service with coastal restaurants and spa facilities.</p>\n\n      <div class=\"article-photo-grid\">\n        <figure class=\"article-figure-inline\">\n          <img src=\"assets/images/travel_punta_mita_four_seasons.jpg\" alt=\"Beachfront palapas and pavilions at Four Seasons Resort Punta Mita\">\n          <figcaption>Beachfront pavilions and palapas along the Pacific shoreline at Four Seasons Resort Punta Mita.</figcaption>\n        </figure>\n        <figure class=\"article-figure-inline\">\n          <img src=\"assets/images/travel_punta_mita_naviva.jpg\" alt=\"Luxury tented suite surrounded by tropical forest at Naviva, A Four Seasons Resort\">\n          <figcaption>One of the 15 luxury tented accommodations nestled in coastal vegetation at Naviva, A Four Seasons Resort.</figcaption>\n        </figure>\n      </div>\n\n      <h3>Intimate Stays at Naviva</h3>\n      <p>For guests seeking a smaller footprint, Naviva, A Four Seasons Resort operates with just 15 luxury tented accommodations surrounded by native coastal vegetation. Each suite opens onto private decks and plunge pools designed for quiet stays, wellness treatments inspired by the surrounding terrain, and direct contact with the Pacific coastline.</p>\n\n      <h3>Jack Nicklaus Golf and the Tail of the Whale</h3>\n      <p>Punta Mita is also a major stop for international golf travelers thanks to its two Jack Nicklaus signature courses, Pacífico and Bahía. The Pacífico course is best known for Hole 3B, called Tail of the Whale, whose green sits on a natural island offshore in the Pacific Ocean and is reachable at low tide across a stone causeway or by amphibious golf cart.</p>\n\n      <p>Away from the fairways, visitors book private boating excursions across Banderas Bay, chef-led seafood dinners, and spa programs rooted in regional ingredients.</p>\n\n      <figure class=\"article-figure-inline\" style=\"margin: 22px 0;\">\n        <img src=\"assets/images/travel_punta_mita_peninsula.jpg\" alt=\"Aerial view of Punta Mita peninsula, beaches, and coastal residences in Riviera Nayarit\" style=\"height: auto; max-height: 440px; object-fit: cover;\">\n        <figcaption>Aerial view of the Punta Mita peninsula, showing its calm Pacific bay, beachfront residences, and coastal golf fairways in Riviera Nayarit.</figcaption>\n      </figure>\n\n      <h3>Real Estate Growth and International Recognition</h3>\n      <p>Steady private investment has expanded the peninsula’s residential market past 500 luxury homes overlooking quiet stretches of beach, supported by private beach clubs and concierge services tailored to long-term residents and seasonal visitors.</p>\n\n      <p>That momentum gained wider global attention in June 2026, when Vogue featured Riviera Nayarit as Mexico’s new “Gold Coast” (Costa Dorada), citing its concentration of international hotel brands and coastal hospitality. With five-star resorts, oceanfront golf, and low-density residential enclaves, Punta Mita anchors Nayarit’s standing among Mexico’s top coastal travel destinations.</p>\n    ",
+    "editorialStatus": "done",
+    "relatedIds": [
+      "zacatecas-seven-pueblos-magicos-tampico-2026",
+      "gran-acuario-mazatlan-best-tourism-product",
+      "hidden-gems-caribbean-coast"
+    ]
+  },
   "zacatecas-seven-pueblos-magicos-tampico-2026": {
     "id": "zacatecas-seven-pueblos-magicos-tampico-2026",
     "category": "TRAVEL",
